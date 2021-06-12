@@ -9,27 +9,47 @@
     <!-- FavIcon -->
     <link rel="shortcut icon" href="assets/imgs/icons/favicon.png" type="image/x-icon">
     <!-- StyleSheets & CSS CDNs -->
-    <link rel="stylesheet" href="assets/stylesheets/main.css">
-    <link rel="stylesheet" href="assets/stylesheets/header.css">
-    <link rel="stylesheet" href="assets/stylesheets/footer.css">
+    <link rel="stylesheet" href="assets/styles/main.css">
+    <link rel="stylesheet" href="assets/styles/header.css">
+    <link rel="stylesheet" href="assets/styles/footer.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
 </head>
 
 <body>
     <!-- Header -->
     <header>
+        <div class="logo">
+            <a href="index.html"><img src="assets/imgs/icons/favicon.png" alt="logo"></a>
+        </div>
         <!-- Header upper area for logo & Search-bar -->
         <div class="header"></div>
         <!-- Navigation Bar -->
-        <div class="nav-bar">
-            <div class="nav-container hover-fx">
-                <a>HOME</a>
-                <a>ARTICLES</a>
-                <a>PORTFOLIO</a>
-                <a>ABOUT</a>
-                <a>CONTACT</a>
+        <nav class="nav-bar">
+            <!-- <div class="menu-btn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div> -->
+            <div class="menu-btn">
+                <ul class="toggle active">
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
             </div>
-        </div>
+            <div class="nav-container">
+                <div class="menu">
+                    <ul class="hover-fx">
+                        <li><a href="#">HOME</a></li>
+                        <li><a href="#">ARTICLES</a></li>
+                        <li><a href="#">PORTFOLIO</a></li>
+                        <li><a href="#">ABOUT</a></li>
+                        <li><a href="#">CONTACT</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
         <!-- Navigation Bar Ends -->
     </header>
     <!-- Header Ends -->
@@ -37,7 +57,9 @@
 
 
     <!-- Scripts & JS CDN -->
+    <script src="assets/scripts/jquery.min.js"></script>
     <script src="assets/scripts/main.js"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
 </body>
 
 </html>
