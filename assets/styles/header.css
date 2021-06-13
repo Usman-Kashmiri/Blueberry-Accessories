@@ -16,6 +16,7 @@ li {
     width: 100%;
     z-index: 10;
     padding: 20px 10px;
+    text-align: center;
 }
 
 .nav-container {
@@ -24,8 +25,8 @@ li {
     z-index: 10;
     padding: 5px 20px;
     display: flex;
-    align-items: center;
-    justify-content: space-between;
+    text-align: center;
+    justify-content: center;
 }
 
 
@@ -96,6 +97,43 @@ li {
     opacity: 1;
     height: 2px;
     width: 100%;
+}
+
+
+/* Drop-Downs */
+
+.dropdown {
+    overflow: visible;
+}
+
+.dropdown a:hover:before,
+.dropdown a:hover:after {
+    opacity: 0;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    float: none;
+    color: black;
+    text-decoration: none;
+    display: block;
+    text-align: center;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
 }
 
 
