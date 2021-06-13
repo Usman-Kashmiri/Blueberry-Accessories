@@ -3,5 +3,9 @@ $(document).ready(function() {
         $('ul.toggle').toggleClass('active');
         $('.menu').toggleClass("active");
         $('.menu-btn .menu').toggleClass('active');
+    });
+
+    $('.dropbtn').click(function() {
+        $('.dropdown-content').toggle();
     })
 })
