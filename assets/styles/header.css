@@ -150,33 +150,27 @@ li {
         width: 50px;
         top: 8px;
         left: 0px;
-        z-index: 10;
-        -webkit-user-select: none;
-        user-select: none;
     }
     .menu-btn.active {
         display: block;
         background: #ffffff;
         width: 40px;
-        height: 32px;
+        height: 25px;
         position: relative;
+        top: 0px;
         cursor: pointer;
         opacity: 0;
-        z-index: 2;
-        -webkit-touch-callout: none;
     }
     .menu-btn ul.toggle {
         position: relative;
-        z-index: 5;
-        top: 8px;
+        top: 5px;
         left: 8px;
-        width: 50px;
         height: 50px;
         cursor: pointer;
     }
     .menu-btn ul.toggle li {
         position: relative;
-        left: 8px;
+        left: 5px;
         height: 4px;
         width: 33px;
         border-radius: 3px;
@@ -218,7 +212,12 @@ li {
         position: relative;
         margin-top: 0;
         width: 100%;
+        max-height: 380px;
+        overflow-y: scroll;
         background: #009e9e;
+    }
+    .menu.active::-webkit-scrollbar {
+        display: none;
     }
     .menu li {
         padding: 2px 0;
@@ -240,5 +239,18 @@ li {
         display: block;
         margin: 5px 0;
         font-size: 25px;
+    }
+    .dropdown-content {
+        display: none;
+        position: relative;
+        background-color: #009e9e;
+        min-width: 100%;
+        box-shadow: none;
+        z-index: 8;
+        margin-top: 0px;
+        padding: 0;
+    }
+    .dropdown .dropdown-content a {
+        font-size: 22px;
     }
 }

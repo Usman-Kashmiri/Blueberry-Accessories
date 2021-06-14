@@ -5,7 +5,10 @@ $(document).ready(function() {
         $('.menu-btn .menu').toggleClass('active');
     });
 
-    $('.dropbtn').click(function() {
-        $('.dropdown-content').toggle();
+    $('#accessories-btn').click(function() {
+        $('#accessories-content').toggle();
+    })
+    $('#products-btn').click(function() {
+        $('#products-content').toggle();
     })
 })
