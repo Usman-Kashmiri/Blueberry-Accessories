@@ -2,6 +2,58 @@
 li {
     list-style: none;
 }
+.container {
+    width: 100%;
+    display: inline-block;
+}
+.navbar-top {
+    background: #009688;
+    display: flex;
+    justify-content: space-between;
+}
+
+.pull-left {
+    display: flex;
+    
+}
+
+.pull-left .userMenu a {
+    text-decoration: none;
+    color:black;
+    font-family: 'Raleway';
+    font-size: 10px;
+    font-style: normal;
+    position: relative;
+    cursor: pointer;
+}
+.pull-left .userMenu a:hover {
+    color: white;
+    transition: 0.3s;
+}
+.pull-right .userMenu a {
+    text-decoration: none;
+    color:black;
+    font-family: 'Raleway';
+    font-size: 12px;
+    font-style: normal;
+    position: relative;
+    cursor: pointer;
+}
+.pull-right .userMenu a:hover {
+    color:white;
+    transition: 0.3s;
+}
+.userMenu li  {
+    display: flex;
+    flex-direction: row-reverse;
+    float: left;
+    margin: 5px;
+    padding: 7px;
+   
+}
+.logo {
+    background-color: #009e9e;
+}
 
 .logo img {
     width: 150px;
@@ -12,7 +64,7 @@ li {
 
 .nav-bar {
     background: #009688;
-    position: fixed;
+    
     width: 100%;
     z-index: 10;
     padding: 20px 10px;
@@ -27,7 +79,46 @@ li {
     display: flex;
     text-align: center;
     justify-content: center;
+    position: sticky;
 }
+
+/*** Search Bar******/
+ .search-container {
+    float: right;
+    position: relative;
+    top: -100px;
+    
+  }
+  
+   input[type=text] {
+    padding: 16px;
+    margin-top: 8px;
+    font-size: 17px;
+    border: none;
+    width: 350px;
+  }
+  
+   .search-container button {
+    float: right;
+    padding: 15px;
+    margin-top: 8px;
+    
+    margin-right: 26px;
+    background:transparent;
+    color: white;
+    font-size: 17px;
+    border: none;
+    cursor: pointer;
+    border: black 1px solid;
+    
+    
+  }
+  
+   .search-container button:hover {
+    outline:#009688 ;
+  }
+   
+  
 
 
 /* Menu-Toggle-Btn */
@@ -132,6 +223,22 @@ li {
 
 .dropdown-content a:hover {
     background-color: #ddd;
+}
+
+
+
+/*****crousle*****/
+
+.carousel-container {
+    height: 500px;
+    width: 100%;
+    background: cadetblue;
+    text-align: center;
+    
+}
+.carousel-container h1 {
+    top: 210px;
+    position: relative;
 }
 
 
