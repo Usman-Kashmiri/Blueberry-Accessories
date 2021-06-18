@@ -7,10 +7,10 @@ $(document).ready(function() {
         $('.menu-btn .menu').toggleClass('active');
     });
     // Current Page effect
-    $('ul li a').click(function() {
-        $('li a').removeClass("current");
-        $(this).addClass("current");
-    });
+    // $('ul li a').click(function() {
+    //     $('li a').removeClass('.current');
+    //     $(this).addClass('current');
+    // });
 
     // Navbar onScroll effect
     var stickyOffset = $('.nav-bar').offset().top;
@@ -26,14 +26,18 @@ $(document).ready(function() {
     // Drop-down
     $('#accessories-btn').click(function() {
         $('#accessories-content').toggle();
+        $('i', this).toggleClass('fa-caret-down fa-caret-up');
     })
     $('#products-btn').click(function() {
         $('#products-content').toggle();
+        $('i', this).toggleClass('fa-caret-down fa-caret-up');
     })
-
     $('body').click(function() {
         $('#accessories-content').hide();
     });
+    // $('body').click(function() {
+    //     $('i', '#accessories-btn').toggleClass('fa-caret-down fa-caret-up');
+    // });
     $('#accessories-btn').click(function(event) {
         event.stopPropagation();
     });

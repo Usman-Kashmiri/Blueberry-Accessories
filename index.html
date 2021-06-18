@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="assets/styles/main.css">
     <link rel="stylesheet" href="assets/styles/header.css">
     <link rel="stylesheet" href="assets/styles/footer.css">
+    <link rel="stylesheet" href="assets/styles/carousel.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
 
@@ -27,12 +28,11 @@
                     <div class="navbar-top-left">
                         <div class="pull-left">
                             <ul class="userMenu">
-                                <li><a href="#" rel=".">About Blueberry Accessories</a></li>
-                                <li><a href="#" rel=".">Feedback</a></li>
-                                <li><a href="#" rel=".">Contact Us</a></li>
-                                <li><a href="#" rel=".">FAQs</a></li>
-                                <li><a href="#" rel=".">Policess</a></li>
-
+                                <li><a href="#">About Blueberry Accessories</a></li>
+                                <li><a href="#">Feedback</a></li>
+                                <li><a href="#">Contact Us</a></li>
+                                <li><a href="#">FAQs</a></li>
+                                <li><a href="#">Policess</a></li>
                             </ul>
                         </div>
                     </div>
@@ -41,27 +41,28 @@
                             <ul class="userMenu">
                                 <li><a>Log In <i class="fas fa-sign-in-alt"></i></a></li>
                                 <li><a>Create Account <i class="fas fa-user-plus"></i></a></li>
-
                             </ul>
                         </div>
                     </div>
-
-
                 </div>
             </div>
-
         </div>
         <!----LOGO---->
         <div class="row">
-            <div class="logo">
-                <a href="index.html"><img src="assets/imgs/icons/favicon.png" alt="logo"></a>
+            <div class="col-left">
+                <div class="logo">
+                    <a href="index.html"><img src="assets/imgs/icons/favicon.png" alt="logo"></a>
+                </div>
             </div>
             <!---searchbar-->
-            <div class="search-container">
-                <form>
-                    <input type="text" placeholder="Search.." name="search">
-                    <button type="submit"><i class="fas fa-search"></i></button>
-                </form>
+            <div class="col-right">
+                <div class="search-container">
+                    <form>
+                        <input type="text" placeholder="Search.." name="search">
+                        <button type="submit"><i class="fas fa-search"></i></button>
+                    </form>
+                </div>
+                <span><i class="fa fa-shopping-cart"></i></span>
             </div>
         </div>
 
@@ -80,7 +81,7 @@
             <div class="nav-container">
                 <div class="menu">
                     <ul class="hover-fx">
-                        <li><a href="index.html" class="current">HOME</a></li>
+                        <li class="current"><a href="index.html">HOME</a></li>
                         <li class="dropdown">
                             <a href="#" class="dropbtn" id="accessories-btn">Accessories <i class="fa fa-caret-down"></i></a>
                             <div class="dropdown-content" id="accessories-content">
