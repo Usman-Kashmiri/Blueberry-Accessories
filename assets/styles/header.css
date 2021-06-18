@@ -345,7 +345,7 @@ li.current a:after {
         width: 100%;
         max-height: 380px;
         overflow-y: scroll;
-        background: #009e9e;
+        background: var(--LBlue);
     }
     .menu.active::-webkit-scrollbar {
         display: none;
@@ -374,7 +374,7 @@ li.current a:after {
     .dropdown-content {
         display: none;
         position: relative;
-        background-color: #009e9e;
+        background-color: var(--DBlue);
         min-width: 100%;
         box-shadow: none;
         z-index: 8;
