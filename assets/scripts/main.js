@@ -48,4 +48,20 @@ $(document).ready(function() {
     $('#products-btn').click(function(event) {
         event.stopPropagation();
     });
+
+    // Carousel
+    $('.owl-carousel').owlCarousel({
+        items: 3,
+        loop: true,
+        merge: true,
+        autoplay: true,
+        responsive: {
+            678: {
+                mergeFit: true
+            },
+            1000: {
+                mergeFit: true
+            }
+        }
+    });
 })

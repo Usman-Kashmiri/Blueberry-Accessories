@@ -1,13 +1,12 @@
 /* crousle */
 
-.carousel-container {
-    height: 800px;
+#carousel-section {
     width: 100%;
-    background: whitesmoke;
-    text-align: center;
+    padding: 2%;
+    display: flex;
+    justify-content: center;
 }
 
-.carousel-container h1 {
-    top: 210px;
-    position: relative;
+.carousel-container {
+    width: 100%;
 }

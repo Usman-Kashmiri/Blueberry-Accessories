@@ -21,7 +21,7 @@ li {
 
 .pull-left .userMenu a {
     text-decoration: none;
-    color: black;
+    color: #fff;
     font-family: 'Raleway';
     font-size: 10px;
     font-style: normal;
@@ -30,13 +30,13 @@ li {
 }
 
 .pull-left .userMenu a:hover {
-    color: white;
+    color: yellowgreen;
     transition: 0.3s;
 }
 
 .pull-right .userMenu a {
     text-decoration: none;
-    color: black;
+    color: #fff;
     font-family: 'Raleway';
     font-size: 12px;
     font-style: normal;
@@ -100,19 +100,25 @@ input[type=text] {
     font-size: 17px;
     border: none;
     width: 350px;
+    z-index: 3;
+}
+
+.search-container input:focus {
+    outline: none;
+    box-shadow: 0 0 8px #9ecaed;
 }
 
 .search-container button {
     float: right;
     padding: 12px;
-    margin-top: 7px;
+    margin-top: 8px;
     margin-right: 26px;
-    background: transparent;
+    background: var(--DBlue);
     color: white;
-    font-size: 24px;
+    font-size: 25px;
     border: none;
     cursor: pointer;
-    border: black 1px solid;
+    border: none;
 }
 
 .nav-bar {
