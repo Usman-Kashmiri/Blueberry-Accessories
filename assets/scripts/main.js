@@ -55,6 +55,11 @@ $(document).ready(function() {
         loop: true,
         merge: true,
         autoplay: true,
+        autoplayTimeout: 3000,
+        autoplayHoverPause: true,
+        dots: false,
+        nav: true,
+        navText: ["<div class='nav-btn owl-prev'><i class='fa fa-chevron-left'></i></div>", "<div class='nav-btn owl-next'><i class='fa fa-chevron-right'></i></div>"],
         responsive: {
             678: {
                 mergeFit: true
@@ -64,4 +69,10 @@ $(document).ready(function() {
             }
         }
     });
-})
+    // $('.carousel-container').mouseover(function() {
+    //     $('.owl-nav').css("display", "block");
+    // });
+    // $('.carousel-container').mouseover(function() {
+    //     $('.owl-nav').css("display", "block");
+    // });
+});

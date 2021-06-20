@@ -9,4 +9,87 @@
 
 .carousel-container {
     width: 100%;
+    overflow: hidden;
+}
+
+
+/* Navigation Arrows - Btns */
+
+.owl-nav {
+    position: absolute;
+    top: 45%;
+    z-index: 6;
+}
+
+.owl-prev i,
+.owl-next i {
+    font-size: 32px;
+    color: #fff;
+}
+
+.owl-prev {
+    position: absolute;
+    left: 5px;
+}
+
+.owl-next {
+    position: absolute;
+    text-align: right;
+    right: -645px;
+}
+
+.owl-prev,
+.owl-next {
+    height: 40px;
+    width: 34px;
+}
+
+.owl-nav {
+    opacity: 1;
+}
+
+.owl-prev {
+    -webkit-transform: translateX(-50px);
+    -moz-transform: translateX(-50px);
+    -o-transform: translateX(-50px);
+    -ms-transform: translateX(-50px);
+    transform: translateX(-50px);
+    -webkit-transition: opacity .5s linear, -webkit-transform .7s cubic-bezier(.56, .48, 0, .99);
+    -moz-transition: opacity .5s linear, -moz-transform .7s cubic-bezier(.56, .48, 0, .99);
+    -o-transition: opacity .5s linear, -o-transform .7s cubic-bezier(.56, .48, 0, .99);
+    -ms-transition: opacity .5s linear, -ms-transform .7s cubic-bezier(.56, .48, 0, .99);
+    transition: opacity .5s linear, transform .7s cubic-bezier(.56, .48, 0, .99);
+    opacity: 0;
+}
+
+.carousel-container:hover .owl-prev {
+    -webkit-transform: translateX(0);
+    -moz-transform: translateX(0);
+    -o-transform: translateX(0);
+    -ms-transform: translateX(0);
+    transform: translateX(0);
+    opacity: 1;
+}
+
+.owl-next {
+    -webkit-transform: translateX(50px);
+    -moz-transform: translateX(50px);
+    -o-transform: translateX(50px);
+    -ms-transform: translateX(50px);
+    transform: translateX(50px);
+    -webkit-transition: opacity .5s linear, -webkit-transform .7s cubic-bezier(.56, .48, 0, .99);
+    -moz-transition: opacity .5s linear, -moz-transform .7s cubic-bezier(.56, .48, 0, .99);
+    -o-transition: opacity .5s linear, -o-transform .7s cubic-bezier(.56, .48, 0, .99);
+    -ms-transition: opacity .5s linear, -ms-transform .7s cubic-bezier(.56, .48, 0, .99);
+    transition: opacity .5s linear, transform .7s cubic-bezier(.56, .48, 0, .99);
+    opacity: 0;
+}
+
+.carousel-container:hover .owl-next {
+    -webkit-transform: translateX(0);
+    -moz-transform: translateX(0);
+    -o-transform: translateX(0);
+    -ms-transform: translateX(0);
+    transform: translateX(0);
+    opacity: 1;
 }
