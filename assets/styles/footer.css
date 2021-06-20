@@ -1,0 +1,25 @@
+/* footer-top */
+
+.footer-top {
+    background: var(--DBlue);
+    display: block;
+    height: 80px;
+}
+
+
+/* footer-mid */
+
+.footer-mid {
+    background: var(--LBlue);
+    display: block;
+    height: 280px;
+}
+
+
+/* footer-bottom */
+
+.footer-bottom {
+    background: var(--DBlue);
+    display: block;
+    height: 60px;
+}
