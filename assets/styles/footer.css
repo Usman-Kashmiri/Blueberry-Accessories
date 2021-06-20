@@ -6,6 +6,17 @@
     height: 80px;
 }
 
+.footer-top .search-container {
+    float: right;
+    position: relative;
+    top: 5px;
+    right: 5px;
+}
+
+.footer-top .search-container button {
+    background: var(--LBlue);
+}
+
 
 /* footer-mid */
 

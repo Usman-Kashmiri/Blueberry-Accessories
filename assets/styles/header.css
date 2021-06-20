@@ -100,12 +100,13 @@ input[type=text] {
     font-size: 17px;
     border: none;
     width: 350px;
-    z-index: 3;
+    z-index: 2;
+    border-radius: 5px 0 0 5px;
 }
 
 .search-container input:focus {
     outline: none;
-    box-shadow: 0 0 8px #9ecaed;
+    box-shadow: 0 0 4px 2px #9ecaed;
 }
 
 .search-container button {
@@ -116,9 +117,11 @@ input[type=text] {
     background: var(--DBlue);
     color: white;
     font-size: 25px;
+    z-index: 5;
     border: none;
     cursor: pointer;
     border: none;
+    border-radius: 0 5px 5px 0;
 }
 
 .nav-bar {
