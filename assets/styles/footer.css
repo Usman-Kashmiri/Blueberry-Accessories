@@ -6,6 +6,20 @@
     height: 80px;
 }
 
+.social-icons {
+    display: block;
+    position: relative;
+    font-size: 36px;
+    top: 10px;
+    left: 15px;
+    color: #fff;
+    padding: 10px;
+}
+
+.social-icons i {
+    display: inline-block;
+}
+
 .footer-top .search-container {
     float: right;
     position: relative;
@@ -31,6 +45,25 @@
 
 .footer-bottom {
     background: var(--DBlue);
-    display: block;
     height: 60px;
+    overflow: hidden;
+}
+
+.payment-icons {
+    position: relative;
+    top: 8px;
+}
+
+.payment-icons img {
+    width: 80px;
+}
+
+.footer-bottom p {
+    position: relative;
+    top: 25px;
+    font-size: 12px;
+}
+
+.footer-bottom .col-right p {
+    right: 10px;
 }

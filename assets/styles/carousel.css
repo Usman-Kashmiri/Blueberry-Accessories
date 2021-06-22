@@ -33,9 +33,10 @@
 }
 
 .owl-next {
-    position: absolute;
+    position: relative;
     text-align: right;
-    right: -645px;
+    top: 10px;
+    left: 620px;
 }
 
 .owl-prev,

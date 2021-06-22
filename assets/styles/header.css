@@ -13,6 +13,7 @@ li {
     position: relative;
     display: flex;
     justify-content: space-between;
+    z-index: 10;
 }
 
 .pull-left {
@@ -60,8 +61,19 @@ li {
 
 /* Logo */
 
-.row {
+.header-mid {
     background-color: var(--LBlue);
+    position: relative;
+    z-index: 10;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.row .logo {
+    z-index: 10;
 }
 
 .logo img {
@@ -69,6 +81,7 @@ li {
     cursor: pointer;
     position: relative;
     left: 1%;
+    z-index: 10;
 }
 
 
@@ -78,7 +91,7 @@ li {
     display: inline-block;
     position: absolute;
     font-size: 36px;
-    top: 82px;
+    top: 40px;
     right: 15px;
     color: #fff;
     padding: 25px;
@@ -90,7 +103,7 @@ li {
 .search-container {
     float: right;
     position: relative;
-    top: -100px;
+    top: 50px;
     right: 72px;
 }
 
@@ -127,26 +140,22 @@ input[type=text] {
 .nav-bar {
     background: var(--DBlue);
     width: 100%;
-    z-index: 10;
+    z-index: 8;
     padding: 16px 10px;
     text-align: center;
     position: absolute;
 }
 
-.fixed {
+.nav-bar.fixed {
     position: fixed;
     top: 0px;
 }
 
 .nav-container {
     max-width: auto;
-    background-color: transparent;
-    z-index: 10;
+    position: relative;
+    z-index: 8;
     padding: 5px 20px;
-    display: flex;
-    text-align: center;
-    justify-content: center;
-    flex-wrap: wrap;
 }
 
 
@@ -162,7 +171,8 @@ input[type=text] {
 .menu {
     max-width: auto;
     background: var(--DBlue);
-    z-index: 10;
+    z-index: 6;
+    position: relative;
     display: flex;
     text-align: center;
     justify-content: center;
@@ -177,7 +187,7 @@ input[type=text] {
     margin: 0px 10px;
     padding: 16px 5px;
     position: relative;
-    z-index: 0;
+    /* z-index: 0; */
     cursor: pointer;
 }
 
@@ -240,19 +250,13 @@ li.current a:after {
     overflow: visible;
 }
 
-
-/* .dropdown a:hover:before,
-.dropdown a:hover:after {
-    opacity: 0;
-} */
-
 .dropdown-content {
     display: none;
     position: absolute;
     background-color: #f9f9f9;
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-    z-index: 8;
+    z-index: 7;
     margin-top: 25px;
     padding: 15px 0 15px 0;
 }
@@ -270,19 +274,21 @@ li.current a:after {
 }
 
 
-/* .dropdown:hover .dropdown-content {
-    display: block;
-} */
-
-
 /* Media Queries */
 
 @media screen and (max-width: 770px) {
     .nav-bar {
+        z-index: 12;
         padding: 0;
     }
     .nav-container {
+        position: relative;
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        flex-wrap: wrap;
         padding: 0;
+        background: var(--LBlue);
     }
     .menu-btn {
         display: block;
@@ -355,6 +361,8 @@ li.current a:after {
         max-height: 380px;
         overflow-y: scroll;
         background: var(--LBlue);
+        opacity: 1;
+        transition: all .5s ease-in-out;
     }
     .menu.active::-webkit-scrollbar {
         display: none;
@@ -368,7 +376,10 @@ li.current a:after {
         width: 100%;
     }
     .menu {
-        display: none;
+        opacity: 0;
+        background: var(--LBlue);
+        margin-top: -500px;
+        transition: all .3s ease-in-out;
     }
     .menu li {
         display: block;
@@ -386,7 +397,6 @@ li.current a:after {
         background-color: var(--DBlue);
         min-width: 100%;
         box-shadow: none;
-        z-index: 8;
         margin-top: 0px;
         padding: 0;
     }
