@@ -10,6 +10,7 @@
     display: block;
     position: relative;
     font-size: 36px;
+    text-align: center;
     top: 10px;
     left: 15px;
     color: #fff;
@@ -17,7 +18,16 @@
 }
 
 .social-icons i {
+    padding: 3px 0;
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
     display: inline-block;
+}
+
+.social-icons i:hover {
+    color: var(--DBlue);
+    background-color: white;
 }
 
 .footer-top .search-container {
@@ -38,6 +48,23 @@
     background: var(--LBlue);
     display: block;
     height: 280px;
+    overflow: hidden;
+}
+
+.footer-mid .logo {
+    position: relative;
+    top: 0%;
+    left: 5%;
+}
+
+.footer-mid .logo img {
+    width: 180px;
+}
+
+.location {
+    position: relative;
+    right: 10%;
+    padding: 5%;
 }
 
 

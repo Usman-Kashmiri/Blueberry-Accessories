@@ -3,6 +3,10 @@ li {
     list-style: none;
 }
 
+#page {
+    display: none;
+}
+
 .container {
     width: 100%;
     display: inline-block;
@@ -62,6 +66,7 @@ li {
 /* Logo */
 
 .header-mid {
+    padding: 20px 0;
     background-color: var(--LBlue);
     position: relative;
     z-index: 10;
@@ -77,10 +82,10 @@ li {
 }
 
 .logo img {
-    width: 150px;
+    width: 260px;
     cursor: pointer;
     position: relative;
-    left: 1%;
+    left: 2%;
     z-index: 10;
 }
 
@@ -91,8 +96,8 @@ li {
     display: inline-block;
     position: absolute;
     font-size: 36px;
-    top: 40px;
-    right: 15px;
+    top: 60px;
+    right: 12px;
     color: #fff;
     padding: 25px;
 }

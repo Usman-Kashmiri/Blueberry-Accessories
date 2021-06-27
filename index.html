@@ -10,6 +10,7 @@
     <link rel="shortcut icon" href="assets/imgs/icons/favicon.png" type="image/x-icon">
     <!-- StyleSheets & CSS CDNs -->
     <link rel="stylesheet" href="assets/styles/main.css">
+    <link rel="stylesheet" href="assets/styles/loader.css">
     <link rel="stylesheet" href="assets/styles/header.css">
     <link rel="stylesheet" href="assets/styles/index.css">
     <link rel="stylesheet" href="assets/styles/footer.css">
@@ -26,179 +27,209 @@
 </head>
 
 <body>
-    <!-- Header -->
-    <header>
-        <!----NavbarTop--------->
-        <div class="navbar-top">
-            <div class="container">
-                <div class="row">
-                    <div class="navbar-top-left">
-                        <div class="pull-left">
-                            <ul class="userMenu">
-                                <li><a href="#">About Blueberry Accessories</a></li>
-                                <li><a href="#">Feedback</a></li>
-                                <li><a href="#">Contact Us</a></li>
-                                <li><a href="#">FAQs</a></li>
-                                <li><a href="#">Policess</a></li>
-                            </ul>
+    <!-- Pre-loader -->
+
+    <div id="pre-loader">
+        <div class="berries">
+            <img id="berry1" class="berry" src="assets/imgs/logo/png 01.png">
+            <img id="berry2" class="berry" src="assets/imgs/logo/png 02.png">
+            <img id="berry3" class="berry" src="assets/imgs/logo/png 03.png">
+        </div>
+        <div class="leaves">
+            <img src="assets/imgs/logo/png 04.png">
+        </div>
+        <div class="tittle">
+            <img src="assets/imgs/logo/tittle.png">
+        </div>
+    </div>
+
+    <!-- Pre-loader Ends -->
+    <section id="page">
+        <!-- Header -->
+        <header>
+            <!----NavbarTop--------->
+            <div class="navbar-top">
+                <div class="container">
+                    <div class="row">
+                        <div class="navbar-top-left">
+                            <div class="pull-left">
+                                <ul class="userMenu">
+                                    <li><a href="#">About Blueberry Accessories</a></li>
+                                    <li><a href="#">Feedback</a></li>
+                                    <li><a href="#">Contact Us</a></li>
+                                    <li><a href="#">FAQs</a></li>
+                                    <li><a href="#">Policess</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="navbar-top-right">
+                            <div class="pull-right">
+                                <ul class="userMenu">
+                                    <li><a>Log In <i class="fas fa-sign-in-alt"></i></a></li>
+                                    <li><a>Create Account <i class="fas fa-user-plus"></i></a></li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
-                    <div class="navbar-top-right">
-                        <div class="pull-right">
-                            <ul class="userMenu">
-                                <li><a>Log In <i class="fas fa-sign-in-alt"></i></a></li>
-                                <li><a>Create Account <i class="fas fa-user-plus"></i></a></li>
-                            </ul>
-                        </div>
-                    </div>
                 </div>
             </div>
-        </div>
-        <!----LOGO---->
-        <div class="header-mid">
-            <div class="row">
-                <div class="col-left">
-                    <div class="logo">
-                        <a href="index.html"><img src="assets/imgs/icons/favicon.png" alt="logo"></a>
-                    </div>
-                </div>
-                <!---searchbar-->
-                <div class="col-right">
-                    <div class="search-container">
-                        <form>
-                            <input type="text" placeholder="Search.." name="search">
-                            <button type="submit"><i class="fas fa-search"></i></button>
-                        </form>
-                    </div>
-                    <span><i class="fa fa-shopping-cart"></i></span>
-                </div>
-            </div>
-        </div>
-
-        <div class="header"></div>
-        <!-- Navigation Bar -->
-        <nav class="nav-bar">
-            <!-- Hamburger Icon with animation -->
-            <div class="menu-btn">
-                <ul class="toggle active">
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                </ul>
-            </div>
-            <!-- Menu-Items -->
-            <div class="nav-container">
-                <div class="menu">
-                    <ul class="hover-fx">
-                        <li class="current"><a href="index.html">HOME</a></li>
-                        <li class="dropdown">
-                            <a href="#" class="dropbtn" id="accessories-btn">Accessories <i class="fa fa-caret-down"></i></a>
-                            <div class="dropdown-content" id="accessories-content">
-                                <a href="#">Link 1</a>
-                                <a href="#">Link 2</a>
-                                <a href="#">Link 3</a>
-                            </div>
-                        </li>
-                        <li class="dropdown">
-                            <a href="#" class="dropbtn" id="products-btn">Mobiles <i class="fa fa-caret-down"></i></a>
-                            <div class="dropdown-content" id="products-content">
-                                <a href="#">iPhone</a>
-                                <a href="#">Samsung</a>
-                                <a href="#">Huawei</a>
-                                <a href="#">Others</a>
-                            </div>
-                        </li>
-                        <li><a href="#">Graphic Cards</a></li>
-                        <li><a href="#">Computer</a></li>
-                        <li><a href="monitor.html">Monitors</a></li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
-        <!-- Navigation Bar Ends -->
-    </header>
-    <!-- Header Ends -->
-
-    <!-----------Crousel------------>
-    <main>
-        <!-- Carosel -->
-        <section id="carousel-section">
-            <div class="carousel-container">
-                <div class="owl-carousel owl-theme">
-                    <div class="item" data-merge="6">
-                        <img src="assets/imgs/index/carousel/img 01.jpg" alt="slide 01">
-                    </div>
-                    <div class="item" data-merge="6">
-                        <img src="assets/imgs/index/carousel/img 02.png" alt="slide 02">
-                    </div>
-                    <div class="item" data-merge="6">
-                        <img src="assets/imgs/index/carousel/img 03.jpg" alt="slide 03">
-                    </div>
-                    <div class="item" data-merge="6">
-                        <img src="assets/imgs/index/carousel/img 04.png" alt="slide 04">
-                    </div>
-                    <div class="item" data-merge="6">
-                        <img src="assets/imgs/index/carousel/img 05.jpg" alt="slide 05">
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- Carousel Section Ends -->
-        <!-- Products Section -->
-        <section id="featured-products">
-            <div class="heading">
-                <h1>Featured Products</h1>
-            </div>
-        </section>
-
-        <!-- footer -->
-        <footer>
-            <div class="footer-top">
+            <!----LOGO---->
+            <div class="header-mid">
                 <div class="row">
                     <div class="col-left">
-                        <div class="social-icons">
-                            <i class="fab fa-facebook-f"></i>
-                            <i class="fab fa-twitter"></i>
-                            <i class="fab fa-instagram"></i>
-                            <i class="fab fa-whatsapp"></i>
+                        <div class="logo">
+                            <a href="index.html">
+                                <img src="assets/imgs/logo/logo.png" alt="logo">
+                            </a>
                         </div>
                     </div>
+                    <!---searchbar-->
                     <div class="col-right">
                         <div class="search-container">
                             <form>
-                                <input type="text" placeholder="Enter Your Email" name="search">
-                                <button type="submit">Subscribe <i class="fa fa-bell"></i></button>
+                                <input type="text" placeholder="Search.." name="search">
+                                <button type="submit"><i class="fas fa-search"></i></button>
                             </form>
+                        </div>
+                        <span><i class="fa fa-shopping-cart"></i></span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="header"></div>
+            <!-- Navigation Bar -->
+            <nav class="nav-bar">
+                <!-- Hamburger Icon with animation -->
+                <div class="menu-btn">
+                    <ul class="toggle active">
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                </div>
+                <!-- Menu-Items -->
+                <div class="nav-container">
+                    <div class="menu">
+                        <ul class="hover-fx">
+                            <li class="current"><a href="index.html">HOME</a></li>
+                            <li class="dropdown">
+                                <a href="#" class="dropbtn" id="accessories-btn">Accessories <i class="fa fa-caret-down"></i></a>
+                                <div class="dropdown-content" id="accessories-content">
+                                    <a href="#">Link 1</a>
+                                    <a href="#">Link 2</a>
+                                    <a href="#">Link 3</a>
+                                </div>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropbtn" id="products-btn">Mobiles <i class="fa fa-caret-down"></i></a>
+                                <div class="dropdown-content" id="products-content">
+                                    <a href="#">iPhone</a>
+                                    <a href="#">Samsung</a>
+                                    <a href="#">Huawei</a>
+                                    <a href="#">Others</a>
+                                </div>
+                            </li>
+                            <li><a href="#">Graphic Cards</a></li>
+                            <li><a href="#">Computer</a></li>
+                            <li><a href="monitor.html">Monitors</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <!-- Navigation Bar Ends -->
+        </header>
+        <!-- Header Ends -->
+
+        <!-----------Crousel------------>
+        <main>
+            <!-- Carosel -->
+            <section id="carousel-section">
+                <div class="carousel-container">
+                    <div class="owl-carousel owl-theme">
+                        <div class="item" data-merge="6">
+                            <img src="assets/imgs/index/carousel/img 01.jpg" alt="slide 01">
+                        </div>
+                        <div class="item" data-merge="6">
+                            <img src="assets/imgs/index/carousel/img 02.png" alt="slide 02">
+                        </div>
+                        <div class="item" data-merge="6">
+                            <img src="assets/imgs/index/carousel/img 03.jpg" alt="slide 03">
+                        </div>
+                        <div class="item" data-merge="6">
+                            <img src="assets/imgs/index/carousel/img 04.png" alt="slide 04">
+                        </div>
+                        <div class="item" data-merge="6">
+                            <img src="assets/imgs/index/carousel/img 05.jpg" alt="slide 05">
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="footer-mid">
-                <div class="row">
-                    <div class="col-left"></div>
-                    <div class="col-right"></div>
+            </section>
+            <!-- Carousel Section Ends -->
+            <!-- Products Section -->
+            <section id="featured-products">
+                <div class="heading">
+                    <h1>Featured Products</h1>
                 </div>
-            </div>
-            <div class="footer-bottom">
-                <div class="row">
-                    <div class="col-left">
-                        <p>Copypright &copy; <b><a href="index.html">Blueberry Accessories</a></b> 2021-22. All rights reserved.</p>
-                    </div>
-                    <div class="payment-icons">
-                        <img src="assets/imgs/icons/easypaisa.png" alt="Easypaisa">
-                        <img src="assets/imgs/icons/JazzCash.png" alt="JazzCash">
-                        <img src="assets/imgs/icons/Konnect.png" alt="HBL Konnect">
-                        <img src="assets/imgs/icons/paypal.png" alt="Paypal">
-                        <img src="assets/imgs/icons/MasterCard.png" alt="MasterCard">
-                        <img src="assets/imgs/icons/visa.png" alt="Visa">
-                    </div>
-                    <div class="col-right">
-                        <p>Designed By <b><a href="">Usman Kashmiri</a></b> & <b><a href="">M. Yasir Hussain</a></b></p>
+            </section>
+
+            <!-- footer -->
+            <footer>
+                <div class="footer-top">
+                    <div class="row">
+                        <div class="col-left">
+                            <div class="social-icons">
+                                <i class="fab fa-facebook-f"></i>
+                                <i class="fab fa-twitter"></i>
+                                <i class="fab fa-instagram"></i>
+                                <i class="fab fa-whatsapp"></i>
+                            </div>
+                        </div>
+                        <div class="col-right">
+                            <div class="search-container">
+                                <form>
+                                    <input type="text" placeholder="Enter Your Email" name="search">
+                                    <button type="submit">Subscribe <i class="fa fa-bell"></i></button>
+                                </form>
+                            </div>
+                        </div>
                     </div>
                 </div>
-            </div>
-        </footer>
-    </main>
+                <div class="footer-mid">
+                    <div class="row">
+                        <div class="col-left">
+                            <div class="logo">
+                                <a href="index.html"><img src="assets/imgs/icons/favicon.png" alt="logo"></a>
+                            </div>
+                        </div>
+                        <div class="col-right">
+                            <div class="location">
+                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d904.5393008333696!2d67.09480869190557!3d24.926714016346335!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3eb338caa5ac57cb%3A0x2c4b1fc512ab6bb!2sAptech%20Computer%20Education%20Gulshan-e-Iqbal%20Campus!5e0!3m2!1sen!2sus!4v1624599174879!5m2!1sen!2sus"
+                                    width="250" height="250" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-bottom">
+                    <div class="row">
+                        <div class="col-left">
+                            <p>Copypright &copy; <b><a href="index.html">Blueberry Accessories</a></b> 2021-22. All rights reserved.</p>
+                        </div>
+                        <div class="payment-icons">
+                            <img src="assets/imgs/icons/easypaisa.png" alt="Easypaisa">
+                            <img src="assets/imgs/icons/JazzCash.png" alt="JazzCash">
+                            <img src="assets/imgs/icons/Konnect.png" alt="HBL Konnect">
+                            <img src="assets/imgs/icons/paypal.png" alt="Paypal">
+                            <img src="assets/imgs/icons/MasterCard.png" alt="MasterCard">
+                            <img src="assets/imgs/icons/visa.png" alt="Visa">
+                        </div>
+                        <div class="col-right">
+                            <p>Designed By <b><a href="">Usman Kashmiri</a></b> & <b><a href="">M. Yasir Hussain</a></b></p>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </main>
+    </section>
 
 
 
@@ -206,7 +237,10 @@
     <script src="assets/scripts/jquery.min.js"></script>
     <script src="assets/scripts/owl.carousel.js"></script>
     <script src="assets/scripts/main.js"></script>
+    <script src="assets/scripts/GSAP3.js"></script>
+    <script src="assets/scripts/loader.js"></script>
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+
 </body>
 
 </html>
