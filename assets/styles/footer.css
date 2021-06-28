@@ -1,3 +1,8 @@
+footer {
+    font-family: 'raleway';
+}
+
+
 /* footer-top */
 
 .footer-top {
@@ -53,12 +58,33 @@
 
 .footer-mid .logo {
     position: relative;
-    top: 0%;
     left: 5%;
 }
 
 .footer-mid .logo img {
-    width: 180px;
+    width: 320px;
+}
+
+.footer-mid p {
+    margin-top: -10px;
+    padding: 0 0 0 30px;
+    width: 360px;
+    font-size: 18px;
+    font-family: 'Open Sans';
+}
+
+.footer-mid h2 {
+    text-transform: uppercase;
+    font-size: 24px;
+    margin-bottom: 14px;
+}
+
+.footer-mid .col {
+    margin: 25px;
+}
+
+.footer-nav li {
+    padding: 6px;
 }
 
 .location {
@@ -89,6 +115,10 @@
     position: relative;
     top: 25px;
     font-size: 12px;
+}
+
+.footer-bottom .col-left p {
+    left: 10px;
 }
 
 .footer-bottom .col-right p {
