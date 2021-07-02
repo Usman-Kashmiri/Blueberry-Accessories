@@ -3,9 +3,9 @@ li {
     list-style: none;
 }
 
-/* #page {
+#page {
     display: none;
-} */
+}
 
 .container {
     width: 100%;
@@ -35,7 +35,7 @@ li {
 }
 
 .pull-left .userMenu a:hover {
-    color: yellowgreen;
+    color: var(--DGreen);
     transition: 0.3s;
 }
 
@@ -47,11 +47,6 @@ li {
     font-style: normal;
     position: relative;
     cursor: pointer;
-}
-
-.pull-right .userMenu a:hover {
-    color: white;
-    transition: 0.3s;
 }
 
 .userMenu li {
@@ -93,20 +88,21 @@ li {
 /* Cart Icon */
 
 .col-right span {
-    display: inline-block;
-    position: absolute;
+    position: relative;
+    float: right;
     font-size: 36px;
-    top: 60px;
-    right: 12px;
     color: #fff;
-    padding: 25px;
+    margin-top: 8px;
+    color: white;
+    z-index: 5;
 }
 
 
 /* Search Bar */
 
 .search-container {
-    float: right;
+    display: flex;
+    justify-content: space-between;
     position: relative;
     top: 50px;
     right: 72px;
@@ -114,7 +110,6 @@ li {
 
 input[type=text] {
     padding: 16px;
-    margin-top: 8px;
     font-size: 17px;
     border: none;
     width: 350px;
@@ -128,9 +123,9 @@ input[type=text] {
 }
 
 .search-container button {
+    position: relative;
     float: right;
     padding: 12px;
-    margin-top: 8px;
     margin-right: 26px;
     background: var(--DBlue);
     color: white;
@@ -145,10 +140,9 @@ input[type=text] {
 .nav-bar {
     background: var(--DBlue);
     width: 100%;
-    z-index: 8;
+    z-index: 12;
     padding: 16px 10px;
     text-align: center;
-    position: absolute;
 }
 
 .nav-bar.fixed {
@@ -262,7 +256,7 @@ li.current a:after {
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     z-index: 7;
-    margin-top: 25px;
+    margin-top: 21px;
     padding: 15px 0 15px 0;
 }
 

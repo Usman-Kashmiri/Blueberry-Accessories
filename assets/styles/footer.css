@@ -38,7 +38,7 @@ footer {
 .footer-top .search-container {
     float: right;
     position: relative;
-    top: 5px;
+    top: 15px;
     right: 5px;
 }
 
@@ -80,11 +80,35 @@ footer {
 }
 
 .footer-mid .col {
-    margin: 25px;
+    display: block;
+    margin: 25px 15px;
 }
 
 .footer-nav li {
-    padding: 6px;
+    padding: 8px;
+}
+
+.footer-mid .contact-box li {
+    display: inline-block;
+    width: 325px;
+}
+
+.footer-mid .contact-box i {
+    display: inline-block;
+    margin-left: -10px;
+    font-size: 20px;
+    color: var(--DGreen);
+}
+
+.footer-mid .contact-box a {
+    display: inline-block;
+    margin-top: -20px;
+    padding-left: 16px;
+    color: #fff;
+}
+
+.contact-box a:hover {
+    color: var(--DGreen);
 }
 
 .location {

@@ -13,10 +13,8 @@ $(document).ready(function() {
     // });
 
     // Navbar onScroll effect
-    var stickyOffset = $('.nav-bar').offset().top;
-
     $(window).scroll(function() {
-        if ($(window).scrollTop() >= stickyOffset) {
+        if ($(window).scrollTop() >= 230) {
             $('.nav-bar').addClass('fixed');
         } else {
             $('.nav-bar').removeClass('fixed');
@@ -51,7 +49,7 @@ $(document).ready(function() {
 
     // Carousel
     $('.owl-carousel').owlCarousel({
-        items: 3,
+        items: 1,
         loop: true,
         merge: true,
         autoplay: true,
@@ -69,10 +67,4 @@ $(document).ready(function() {
             }
         }
     });
-    // $('.carousel-container').mouseover(function() {
-    //     $('.owl-nav').css("display", "block");
-    // });
-    // $('.carousel-container').mouseover(function() {
-    //     $('.owl-nav').css("display", "block");
-    // });
 });
