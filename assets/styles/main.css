@@ -5,7 +5,7 @@
 :root {
     --LBlue: #454cac;
     --DBlue: #282c6b;
-    --DGreen: #437022;
+    --DGreen: #71c038;
 }
 
 * {
@@ -30,7 +30,8 @@ a {
 }
 
 a:hover {
-    color: yellow;
+    color: var(--DGreen);
+    transition: 0.3s;
 }
 
 p,
