@@ -6,6 +6,9 @@ $(document).ready(function() {
         $('.menu').toggleClass("active");
         $('.menu-btn .menu').toggleClass('active');
     });
+    $('#chk').click(function() {
+        $('body').toggleClass('dark');
+    });
     // Current Page effect
     // $('ul li a').click(function() {
     //     $('li a').removeClass('.current');
