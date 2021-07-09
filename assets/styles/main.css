@@ -74,7 +74,7 @@ body {
 }
 
 body.dark {
-    background: var(--Dark);
+    background: #111;
 }
 
 .checkbox {
@@ -97,7 +97,7 @@ body.dark {
 }
 
 .label .ball {
-    background-color: black;
+    background-color: #111;
     border-radius: 50%;
     position: absolute;
     top: 2px;
@@ -113,7 +113,7 @@ body.dark {
 }
 
 .checkbox:checked+.label {
-    background-color: black;
+    background-color: #111;
 }
 
 .checkbox:checked+.label .ball {
@@ -141,12 +141,17 @@ body.dark {
 }
 
 .dark::-webkit-scrollbar-track {
-    background: var(--Dark);
+    background: #111;
 }
 
 ::-webkit-scrollbar-thumb {
-    background: #b8b8b8;
-    border-radius: 30px;
+    background: #a5a5a5;
+    border-radius: 50px;
+    transition: 0.3 all;
+}
+
+.dark::-webkit-scrollbar-thumb {
+    background: #313131;
 }
 
 
