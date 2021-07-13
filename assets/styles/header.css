@@ -24,21 +24,7 @@ li {
     display: flex;
 }
 
-.pull-left .userMenu a {
-    text-decoration: none;
-    color: #fff;
-    font-family: 'Raleway';
-    font-size: 10px;
-    font-style: normal;
-    position: relative;
-    cursor: pointer;
-}
-
-.pull-left .userMenu a:hover {
-    color: var(--DGreen);
-    transition: 0.3s;
-}
-
+.pull-left .userMenu a,
 .pull-right .userMenu a {
     text-decoration: none;
     color: #fff;
@@ -47,6 +33,11 @@ li {
     font-style: normal;
     position: relative;
     cursor: pointer;
+}
+
+.pull-left .userMenu a:hover {
+    color: var(--DGreen);
+    transition: 0.3s;
 }
 
 .userMenu li {
@@ -73,6 +64,7 @@ li {
 }
 
 .row .logo {
+    width: 100%;
     z-index: 10;
 }
 
@@ -82,19 +74,6 @@ li {
     position: relative;
     left: 2%;
     z-index: 10;
-}
-
-
-/* Cart Icon */
-
-.col-right span {
-    position: relative;
-    float: right;
-    font-size: 36px;
-    color: #fff;
-    margin-top: 8px;
-    color: white;
-    z-index: 5;
 }
 
 
@@ -136,6 +115,22 @@ input[type=text] {
     border: none;
     border-radius: 0 5px 5px 0;
 }
+
+
+/* Cart Icon */
+
+.col-right span {
+    position: relative;
+    float: right;
+    font-size: 36px;
+    color: #fff;
+    margin-top: 8px;
+    color: white;
+    z-index: 5;
+}
+
+
+/* Navigation Bar */
 
 .nav-bar {
     background: var(--DBlue);
@@ -275,6 +270,12 @@ li.current a:after {
 
 /* Media Queries */
 
+@media screen and (max-width: 1920px) {
+    .container {
+        display: inline-block;
+    }
+}
+
 @media screen and (max-width: 770px) {
     .nav-bar {
         z-index: 12;
@@ -401,5 +402,47 @@ li.current a:after {
     }
     .dropdown .dropdown-content a {
         font-size: 22px;
+    }
+}
+
+@media screen and (max-width: 540px) {
+    .row {
+        display: block;
+    }
+    .pull-left .userMenu a,
+    .pull-right .userMenu a {
+        font-size: 9px;
+    }
+    .pull-right {
+        margin-right: 5px;
+    }
+    .userMenu li {
+        margin: 5px 2px;
+        padding: 5px;
+    }
+    .header-mid {
+        padding: 10px;
+    }
+    .logo img {
+        left: 18%;
+    }
+    .search-container {
+        top: 0px;
+        right: 0px;
+    }
+    input[type=text] {
+        padding: 14px;
+        font-size: 14px;
+        width: 240px;
+    }
+    .search-container button {
+        padding: 8px;
+        margin-right: 24px;
+        font-size: 24px;
+    }
+    .col-right span {
+        font-size: 32px;
+        margin-top: 8px;
+        right: 10px;
     }
 }

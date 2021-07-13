@@ -70,7 +70,6 @@ body {
     position: absolute;
     cursor: pointer;
     right: 1.5%;
-    /* margin-top: -2.4%; */
 }
 
 body.dark {
@@ -176,7 +175,7 @@ body.dark {
 
 @media screen and (max-width: 1920px) {
     #bg-btn {
-        margin-top: -30px;
+        margin-top: 5px;
     }
     .label {
         transform: scale(1.4);
@@ -189,5 +188,17 @@ body.dark {
     }
     .label {
         transform: scale(1.2);
+    }
+}
+
+@media screen and (max-width: 540px) {
+    #bg-btn {
+        margin-right: 5px;
+    }
+    .heading {
+        height: 36px;
+    }
+    .heading h1 {
+        font-size: 24px;
     }
 }
