@@ -70,7 +70,7 @@ body {
     position: absolute;
     cursor: pointer;
     right: 1.5%;
-    margin-top: -2.4%;
+    /* margin-top: -2.4%; */
 }
 
 body.dark {
@@ -169,4 +169,25 @@ body.dark {
     position: relative;
     text-align: center;
     color: #fff;
+}
+
+
+/* Media Quries */
+
+@media screen and (max-width: 1920px) {
+    #bg-btn {
+        margin-top: -30px;
+    }
+    .label {
+        transform: scale(1.4);
+    }
+}
+
+@media screen and (max-width: 770px) {
+    #bg-btn {
+        margin-top: -38px;
+    }
+    .label {
+        transform: scale(1.2);
+    }
 }
