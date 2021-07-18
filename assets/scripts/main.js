@@ -24,6 +24,19 @@ $(document).ready(function() {
         }
     });
 
+    // Searchbar hide on scroll effect
+    var prevScrollpos = window.pageYOffset;
+
+    $(window).scroll(function() {
+        var currentScrollPos = window.pageYOffset;
+        if (prevScrollpos < currentScrollPos) {
+            $('#search-bar').addClass('hide-col');
+        } else {
+            $('#search-bar').removeClass('hide-col');
+        }
+        prevScrollpos = currentScrollPos;
+    });
+
     // Drop-down
     $('#accessories-btn').click(function() {
         $('#accessories-content').toggle();

@@ -193,7 +193,10 @@ body.dark {
 
 @media screen and (max-width: 540px) {
     #bg-btn {
-        margin-right: 5px;
+        margin-right: 20px;
+        position: fixed;
+        top: 115px;
+        z-index: 100;
     }
     .heading {
         height: 36px;

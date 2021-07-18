@@ -94,3 +94,9 @@
     transform: translateX(0);
     opacity: 1;
 }
+
+@media screen and (max-width: 540px) {
+    #carousel-section {
+        padding: 2% 0;
+    }
+}
