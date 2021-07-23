@@ -6,18 +6,18 @@ $(document).ready(function() {
         $('.menu').toggleClass("active");
         $('.menu-btn .menu').toggleClass('active');
     });
+
+    // Dark Theme Btn
     $('#chk').click(function() {
         $('body').toggleClass('dark');
     });
-    // Current Page effect
-    // $('ul li a').click(function() {
-    //     $('li a').removeClass('.current');
-    //     $(this).addClass('current');
-    // });
+
+    // Dark Theme Alert Msg
+    $(".alert").hide().delay(6000).fadeIn();
 
     // Navbar onScroll effect
     $(window).scroll(function() {
-        if ($(window).scrollTop() >= 230) {
+        if ($(window).scrollTop() >= 220) {
             $('.nav-bar').addClass('fixed');
         } else {
             $('.nav-bar').removeClass('fixed');
@@ -30,11 +30,16 @@ $(document).ready(function() {
     $(window).scroll(function() {
         var currentScrollPos = window.pageYOffset;
         if (prevScrollpos < currentScrollPos) {
-            $('#search-bar').addClass('hide-col');
+            $('#search-bar').hide();
         } else {
-            $('#search-bar').removeClass('hide-col');
+            $('#search-bar').show();
         }
         prevScrollpos = currentScrollPos;
+        // ScrollTimer
+        clearTimeout($.data(this, 'scrollTimer'));
+        $.data(this, 'scrollTimer', setTimeout(function() {
+            $('#search-bar').show();
+        }, 300));
     });
 
     // Drop-down
@@ -49,9 +54,6 @@ $(document).ready(function() {
     $('body').click(function() {
         $('#accessories-content').hide();
     });
-    // $('body').click(function() {
-    //     $('i', '#accessories-btn').toggleClass('fa-caret-down fa-caret-up');
-    // });
     $('#accessories-btn').click(function(event) {
         event.stopPropagation();
     });
@@ -73,14 +75,6 @@ $(document).ready(function() {
         autoplayHoverPause: true,
         dots: false,
         nav: true,
-        navText: ["<div class='nav-btn owl-prev'><i class='fa fa-chevron-left'></i></div>", "<div class='nav-btn owl-next'><i class='fa fa-chevron-right'></i></div>"],
-        responsive: {
-            678: {
-                mergeFit: true
-            },
-            1000: {
-                mergeFit: true
-            }
-        }
+        navText: ["<div class='nav-btn owl-prev'><i class='fa fa-chevron-left'></i></div>", "<div class='nav-btn owl-next'><i class='fa fa-chevron-right'></i></div>"]
     });
 });

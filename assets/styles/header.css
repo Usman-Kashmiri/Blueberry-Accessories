@@ -280,26 +280,72 @@ li.current a:after {
     .logo img {
         width: 225px;
     }
+}
+
+@media screen and (max-width: 540px) {
+    .navbar-top {
+        display: none;
+        position: fixed;
+    }
+    .row {
+        display: block;
+    }
+    .pull-left .userMenu a,
+    .pull-right .userMenu a {
+        font-size: 9px;
+    }
+    .pull-right {
+        margin-right: 5px;
+    }
+    .userMenu li {
+        margin: 5px 2px;
+        padding: 5px;
+    }
+    .header-mid {
+        position: fixed;
+        overflow: hidden;
+        width: 100%;
+        top: 0;
+        z-index: 110;
+        padding: 10px;
+    }
+    .logo img {
+        left: 0%;
+    }
+    .nav-bar.fixed {
+        z-index: 100;
+        background: transparent;
+        top: 0px;
+    }
+    .menu-btn {
+        display: block;
+        position: absolute;
+        width: 50px;
+        left: 80%;
+        top: 38px;
+        z-index: 100;
+    }
+    .hover-fx {
+        overflow-y: scroll;
+        max-height: 450px;
+    }
+    .hover-fx::-webkit-scrollbar {
+        display: none;
+    }
     .nav-bar {
         z-index: 12;
         padding: 0;
     }
     .nav-container {
         position: static;
+        z-index: 100;
+        margin-top: 195px;
+        background-color: transparent;
         display: flex;
         text-align: center;
         justify-content: center;
         flex-wrap: wrap;
         padding: 0;
-        background: var(--LBlue);
-    }
-    .menu-btn {
-        display: block;
-        position: -webkit-sticky;
-        width: 50px;
-        top: 8px;
-        left: 0px;
-        z-index: 100;
     }
     .menu-btn.active {
         display: block;
@@ -414,68 +460,8 @@ li.current a:after {
     .dropdown .dropdown-content a {
         font-size: 22px;
     }
-}
-
-@media screen and (max-width: 540px) {
-    .navbar-top {
-        display: none;
-    }
-    .row {
-        display: block;
-    }
-    .pull-left .userMenu a,
-    .pull-right .userMenu a {
-        font-size: 9px;
-    }
-    .pull-right {
-        margin-right: 5px;
-    }
-    .userMenu li {
-        margin: 5px 2px;
-        padding: 5px;
-    }
-    .header-mid {
-        position: fixed;
-        overflow: hidden;
-        width: 100%;
-        top: 0;
-        z-index: 99;
-        padding: 10px;
-    }
-    .logo img {
-        left: 0%;
-    }
-    .nav-container {
-        position: static;
-        margin-top: 195px;
-        background-color: transparent;
-        z-index: 100;
-    }
-    .nav-bar.fixed {
-        position: fixed;
-        z-index: 100;
-        background: transparent;
-        top: 0px;
-    }
-    .menu-btn {
-        position: absolute;
-        width: 50px;
-        left: 80%;
-        top: 38px;
-        z-index: 100;
-    }
-    .hover-fx {
-        overflow-y: scroll;
-        max-height: 450px;
-    }
-    .hover-fx::-webkit-scrollbar {
-        display: none;
-    }
     .search-bar {
         display: block;
-    }
-    .hide-col {
-        display: none;
     }
     .search-container {
         top: 0px;
@@ -484,6 +470,7 @@ li.current a:after {
     .search-container form {
         position: relative;
         left: 10px;
+        margin-right: 25px;
     }
     input[type=text] {
         padding: 14px;
@@ -498,6 +485,6 @@ li.current a:after {
     .col-right span {
         font-size: 30px;
         margin-top: 6px;
-        right: 14px;
+        margin-right: auto;
     }
 }

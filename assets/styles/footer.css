@@ -1,5 +1,6 @@
 footer {
     font-family: 'raleway';
+    overflow: hidden;
 }
 
 
@@ -53,7 +54,6 @@ footer {
     background: var(--LBlue);
     display: block;
     height: 280px;
-    overflow: hidden;
 }
 
 .footer-mid .logo {
@@ -123,7 +123,6 @@ footer {
 .footer-bottom {
     background: var(--DBlue);
     height: 60px;
-    overflow: hidden;
 }
 
 .payment-icons {
@@ -147,4 +146,77 @@ footer {
 
 .footer-bottom .col-right p {
     right: 10px;
+}
+
+
+/* Media Queries */
+
+@media screen and (max-width: 540px) {
+    .footer-top,
+    .footer-mid,
+    .footer-bottom,
+    .footer-bottom p,
+    .footer-bottom .payment-icons {
+        display: flex;
+        justify-content: center;
+    }
+    .footer-top {
+        height: 150px;
+    }
+    .social-icons {
+        font-size: 32px;
+        top: 10px;
+        left: 0px;
+    }
+    .footer-top .search-container {
+        float: none;
+        top: 20px;
+        right: 0px;
+    }
+    .footer-top .search-container button {
+        background: var(--LBlue);
+    }
+    .footer-top .search-container form {
+        left: 0;
+    }
+    .footer-top .search-container input[type=text] {
+        padding: 13px;
+        width: 200px;
+    }
+    .footer-top .search-container button {
+        padding: 8px;
+        font-size: 22px;
+    }
+    .footer-mid {
+        height: 1236px;
+    }
+    .location {
+        position: relative;
+        right: 0;
+        padding: 0 5% 5%;
+    }
+    .location iframe {
+        width: 100%;
+    }
+    .footer-bottom {
+        height: 125px;
+    }
+    .payment-icons {
+        width: 100%;
+        margin: 18px 0;
+        top: 18px;
+    }
+    .payment-icons img {
+        width: 56px;
+    }
+    .footer-bottom p {
+        top: 20px;
+        font-size: 11px;
+    }
+    .footer-bottom .col-left p {
+        left: 0;
+    }
+    .footer-bottom .col-right p {
+        right: 0;
+    }
 }

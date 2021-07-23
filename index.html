@@ -89,6 +89,23 @@
                             <li></li>
                         </ul>
                     </div>
+                    <!-- Dark mode btn for mobile view -->
+                    <div class="mobile-view">
+                        <!-- Alert Message -->
+                        <div class="alert">
+                            <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
+                            <p>Try out our dark theme.</p>
+                        </div>
+                        <!-- Dark Theme Btn -->
+                        <div id="bg-btn">
+                            <input type="checkbox" class="checkbox" id="chk" />
+                            <label class="label" for="chk">
+                                <i class="fas fa-sun"></i>
+                                <i class="fas fa-moon"></i>
+                                <div class="ball"></div>
+                            </label>
+                        </div>
+                    </div>
                     <!---searchbar-->
                     <div class="col-right" id="search-bar">
                         <div class="search-container">
@@ -105,22 +122,21 @@
             <div class="header"></div>
             <!-- Navigation Bar -->
             <nav class="nav-bar">
-                <!-- Hamburger Icon with animation 
-                <div class="menu-btn">
-                    <ul class="toggle active">
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                    </ul>
-                </div>
-                <!-- Dark Theme Btn -->
-                <div id="bg-btn">
-                    <input type="checkbox" class="checkbox" id="chk" />
-                    <label class="label" for="chk">
+                <div class="desktop-view">
+                    <!-- Alert Message -->
+                    <div class="alert">
+                        <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
+                        <p>Try out our dark theme.</p>
+                    </div>
+                    <!-- Dark Theme Btn -->
+                    <div id="bg-btn">
+                        <input type="checkbox" class="checkbox" id="chk" />
+                        <label class="label" for="chk">
                         <i class="fas fa-sun"></i>
                         <i class="fas fa-moon"></i>
                         <div class="ball"></div>
                     </label>
+                    </div>
                 </div>
                 <!-- Menu-Items -->
                 <div class="nav-container">

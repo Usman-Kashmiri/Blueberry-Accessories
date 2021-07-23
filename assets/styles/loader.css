@@ -192,13 +192,13 @@
     }
     .leaves img {
         top: 18%;
-        left: 16%;
+        left: 15%;
         width: 320px;
     }
     .tittle img {
         width: 220px;
         top: 32%;
-        left: -35%;
+        left: -32%;
     }
 }
 
@@ -210,12 +210,12 @@
     }
     .leaves img {
         top: 15%;
-        left: 16%;
+        left: 15%;
         width: 320px;
     }
     .tittle img {
-        width: 220px;
+        width: 215px;
         top: 33%;
-        left: -33%;
+        left: -31%;
     }
 }
