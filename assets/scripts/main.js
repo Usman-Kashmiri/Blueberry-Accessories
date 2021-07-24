@@ -30,9 +30,9 @@ $(document).ready(function() {
     $(window).scroll(function() {
         var currentScrollPos = window.pageYOffset;
         if (prevScrollpos < currentScrollPos) {
-            $('#search-bar').hide();
+            $('#search-bar').addClass('hide');
         } else {
-            $('#search-bar').show();
+            $('#search-bar').removeClass('hide');
         }
         prevScrollpos = currentScrollPos;
         // ScrollTimer
@@ -77,4 +77,20 @@ $(document).ready(function() {
         nav: true,
         navText: ["<div class='nav-btn owl-prev'><i class='fa fa-chevron-left'></i></div>", "<div class='nav-btn owl-next'><i class='fa fa-chevron-right'></i></div>"]
     });
+
+    // GSAP Cards Animation
+
+    gsap.registerPlugin(ScrollTrigger)
+
+    var cards = document.querySelectorAll(".card");
+
+    var action = gsap.timeline({
+            scrollTrigger: {
+                trigger: ".card",
+                scrub: 3,
+                start: 'top 50%',
+                end: "+=3000",
+            }
+        })
+        .from(cards, { opacity: 0, ease: "none", stagger: 3 })
 });

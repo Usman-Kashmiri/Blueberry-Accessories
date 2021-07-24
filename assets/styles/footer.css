@@ -178,6 +178,7 @@ footer {
     }
     .footer-top .search-container form {
         left: 0;
+        margin-right: 0;
     }
     .footer-top .search-container input[type=text] {
         padding: 13px;
