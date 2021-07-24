@@ -253,6 +253,10 @@ body.dark {
 }
 
 @media screen and (max-width: 540px) {
+    main {
+        position: relative;
+        top: 196px;
+    }
     .desktop-view {
         display: none;
     }

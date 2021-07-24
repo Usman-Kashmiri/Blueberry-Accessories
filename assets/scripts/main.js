@@ -17,7 +17,7 @@ $(document).ready(function() {
 
     // Navbar onScroll effect
     $(window).scroll(function() {
-        if ($(window).scrollTop() >= 220) {
+        if ($(window).scrollTop() >= 230) {
             $('.nav-bar').addClass('fixed');
         } else {
             $('.nav-bar').removeClass('fixed');

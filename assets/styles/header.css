@@ -312,11 +312,6 @@ li.current a:after {
     .logo img {
         left: 0%;
     }
-    .nav-bar.fixed {
-        z-index: 100;
-        background: transparent;
-        top: 0px;
-    }
     .menu-btn {
         display: block;
         position: absolute;
@@ -333,7 +328,8 @@ li.current a:after {
         display: none;
     }
     .nav-bar {
-        z-index: 12;
+        position: fixed;
+        background: transparent;
         padding: 0;
     }
     .nav-container {
