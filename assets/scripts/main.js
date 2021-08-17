@@ -7,9 +7,29 @@ $(document).ready(function() {
         $('.menu-btn .menu').toggleClass('active');
     });
 
-    // Dark Theme Btn
-    $('#chk').click(function() {
-        $('body').toggleClass('dark');
+    // Dark Theme 
+    var checkBox = document.getElementById('chk');
+
+    var theme = window.localStorage.getItem('data-theme');
+    if (theme) document.documentElement.setAttribute('data-theme', theme);
+    checkBox.checked = theme == 'darkMode' ? true : false;
+
+    if (checkBox.checked) {
+        $('body').addClass('dark');
+    } else {
+        $('body').removeClass('dark');
+    }
+
+    checkBox.addEventListener('change', function() {
+        if (this.checked) {
+            document.documentElement.setAttribute('data-theme', 'darkMode');
+            $('body').addClass('dark');
+            window.localStorage.setItem('data-theme', 'darkMode');
+        } else {
+            document.documentElement.setAttribute('data-theme', 'light');
+            $('body').removeClass('dark');
+            window.localStorage.setItem('data-theme', 'light');
+        }
     });
 
     // Dark Theme Alert Msg
