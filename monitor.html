@@ -81,8 +81,33 @@
                             </a>
                         </div>
                     </div>
+                    <!-- Hamburger Icon with animation -->
+                    <div class="menu-btn">
+                        <ul class="toggle active">
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                        </ul>
+                    </div>
+                    <!-- Dark mode btn -->
+                    <div class="dark-mode">
+                        <!-- Alert Message -->
+                        <div class="alert">
+                            <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
+                            <p>Try out our dark theme.</p>
+                        </div>
+                        <!-- Btn -->
+                        <div id="bg-btn">
+                            <input type="checkbox" class="checkbox" id="chk" />
+                            <label class="label" for="chk">
+                    <i class="fas fa-sun"></i>
+                    <i class="fas fa-moon"></i>
+                    <div class="ball"></div>
+                </label>
+                        </div>
+                    </div>
                     <!---searchbar-->
-                    <div class="col-right">
+                    <div class="col-right" id="search-bar">
                         <div class="search-container">
                             <form>
                                 <input type="text" placeholder="Search.." name="search">
@@ -104,15 +129,6 @@
                         <li></li>
                         <li></li>
                     </ul>
-                </div>
-                <!-- Dark Theme Btn -->
-                <div id="bg-btn">
-                    <input type="checkbox" class="checkbox" id="chk" />
-                    <label class="label" for="chk">
-                        <i class="fas fa-moon"></i>
-                        <i class="fas fa-sun"></i>
-                        <div class="ball"></div>
-                    </label>
                 </div>
                 <!-- Menu-Items -->
                 <div class="nav-container">
@@ -436,6 +452,7 @@
     <script src="assets/scripts/owl.carousel.js"></script>
     <script src="assets/scripts/main.js"></script>
     <script src="assets/scripts/GSAP3.js"></script>
+    <script src="assets/scripts/ScrollTrigger.min.js"></script>
     <script src="assets/scripts/loader.js"></script>
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
 
