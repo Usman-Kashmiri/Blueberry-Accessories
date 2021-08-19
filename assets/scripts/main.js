@@ -16,8 +16,10 @@ $(document).ready(function() {
 
     if (checkBox.checked) {
         $('body').addClass('dark');
+        $(".alert").hide()
     } else {
         $('body').removeClass('dark');
+        $(".alert").hide().delay(6000).fadeIn();
     }
 
     checkBox.addEventListener('change', function() {
@@ -31,9 +33,6 @@ $(document).ready(function() {
             window.localStorage.setItem('data-theme', 'light');
         }
     });
-
-    // Dark Theme Alert Msg
-    $(".alert").hide().delay(6000).fadeIn();
 
     // Navbar onScroll effect
     $(window).scroll(function() {
@@ -58,7 +57,7 @@ $(document).ready(function() {
         // ScrollTimer
         clearTimeout($.data(this, 'scrollTimer'));
         $.data(this, 'scrollTimer', setTimeout(function() {
-            $('#search-bar').show();
+            $('#search-bar').removeClass('hide');
         }, 300));
     });
 
@@ -77,6 +76,7 @@ $(document).ready(function() {
     $('#accessories-btn').click(function(event) {
         event.stopPropagation();
     });
+
 
     $('body').click(function() {
         $('#products-content').hide();
@@ -108,8 +108,8 @@ $(document).ready(function() {
             scrollTrigger: {
                 trigger: ".card",
                 scrub: 3,
-                start: 'top 50%',
-                end: "+=3000",
+                start: 'top 80%',
+                end: "+=2500",
             }
         })
         .from(cards, { opacity: 0, ease: "none", stagger: 3 })

@@ -150,8 +150,12 @@ body.dark {
 
 /* Dark Theme */
 
+.dark-mode {
+    position: absolute;
+    z-index: 99;
+}
+
 #bg-btn {
-    z-index: 10;
     position: absolute;
     cursor: pointer;
     right: 1.5%;
@@ -237,10 +241,8 @@ body.dark {
         transform: scale(1.4);
     }
     .dark-mode {
-        position: absolute;
         right: 20px;
         top: 205px;
-        display: block;
     }
     .alert {
         right: -15px;
@@ -249,10 +251,11 @@ body.dark {
 
 @media screen and (max-width: 770px) {
     #bg-btn {
-        margin-top: -38px;
+        margin-top: -16px;
+        margin-right: -8px;
     }
     .label {
-        transform: scale(1.2);
+        transform: scale(1.1);
     }
 }
 
@@ -261,16 +264,10 @@ body.dark {
         position: relative;
         top: 196px;
     }
-    .desktop-view {
-        display: none;
-    }
-    .dark-mode {
-        display: block;
-    }
     #bg-btn {
-        margin-right: 14px;
+        margin-right: 15px;
         position: fixed;
-        top: 115px;
+        top: 100px;
         z-index: 120;
     }
     .alert {

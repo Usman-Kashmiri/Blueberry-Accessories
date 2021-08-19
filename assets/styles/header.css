@@ -140,7 +140,7 @@ input[type=text] {
     text-align: center;
 }
 
-.nav-bar.fixed {
+.fixed {
     position: fixed;
     top: 0px;
 }
@@ -249,6 +249,7 @@ li.current a:after {
     position: absolute;
     background-color: #f9f9f9;
     min-width: 160px;
+    min-height: auto;
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     z-index: 7;
     margin-top: 21px;
@@ -274,11 +275,25 @@ li.current a:after {
     .container {
         display: inline-block;
     }
+    .search-container {
+        right: 25px;
+    }
 }
 
 @media screen and (max-width: 770px) {
     .logo img {
         width: 225px;
+    }
+    .search-container {
+        right: 20px;
+    }
+    input[type=text] {
+        width: 300px;
+    }
+    .menu a {
+        font-size: 17px;
+        margin: 0px 3px;
+        padding: 14px 4px;
     }
 }
 
