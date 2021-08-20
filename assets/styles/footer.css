@@ -151,6 +151,89 @@ footer {
 
 /* Media Queries */
 
+@media screen and (max-width: 1920px) {
+    .footer-mid .col {
+        margin: 25px;
+    }
+    .footer-mid .contact-box {
+        width: 400px;
+    }
+}
+
+@media screen and (max-width: 1440px) {
+    .footer-mid .col {
+        margin: 25px 15px;
+    }
+}
+
+@media screen and (max-width: 1280px) {
+    .footer-mid .logo {
+        left: 2%;
+    }
+    .footer-mid .col {
+        margin: 25px 12px;
+    }
+    .footer-mid .contact-box {
+        width: 330px;
+    }
+    .location {
+        position: relative;
+        right: 0;
+        padding: 5% 3%;
+    }
+    .location iframe {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .footer-mid .col-left {
+        width: 100%;
+        display: inline-block;
+    }
+    .footer-mid .logo {
+        display: inline-block;
+        position: relative;
+        left: 2%;
+    }
+    .footer-mid .logo img {
+        width: 450px;
+    }
+    .footer-mid p {
+        display: inline-block;
+        position: relative;
+        top: -25px;
+        padding: 0;
+        width: 450px;
+        font-size: 28px;
+    }
+    .footer-mid {
+        height: 560px;
+    }
+    .footer-mid .row,
+    .footer-nav .row {
+        display: inline-block;
+        height: 560px;
+    }
+    .footer-mid .col-left,
+    .footer-mid .col-right {
+        display: inline-block;
+    }
+    .footer-mid .col {
+        display: inline-block;
+        height: 260px;
+        margin: 25px 12px;
+    }
+    .footer-mid .contact-box {
+        position: relative;
+        width: 330px;
+    }
+    .footer-mid .col-right {
+        position: relative;
+        right: 0;
+    }
+}
+
 @media screen and (max-width: 540px) {
     .footer-top,
     .footer-mid,
@@ -191,10 +274,13 @@ footer {
     .footer-mid {
         height: 1236px;
     }
+    .footer-mid .contact-box {
+        width: 320px;
+    }
     .location {
         position: relative;
         right: 0;
-        padding: 0 5% 5%;
+        padding: 0 3% 5%;
     }
     .location iframe {
         width: 100%;
