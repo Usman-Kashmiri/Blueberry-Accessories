@@ -1,5 +1,6 @@
 footer {
     font-family: 'raleway';
+    overflow: hidden;
 }
 
 
@@ -53,7 +54,6 @@ footer {
     background: var(--LBlue);
     display: block;
     height: 280px;
-    overflow: hidden;
 }
 
 .footer-mid .logo {
@@ -123,7 +123,6 @@ footer {
 .footer-bottom {
     background: var(--DBlue);
     height: 60px;
-    overflow: hidden;
 }
 
 .payment-icons {
@@ -147,4 +146,321 @@ footer {
 
 .footer-bottom .col-right p {
     right: 10px;
+}
+
+
+/* Media Queries */
+
+@media screen and (max-width: 1920px) {
+    .footer-mid .col {
+        margin: 25px;
+    }
+    .footer-mid .contact-box {
+        width: 400px;
+    }
+}
+
+@media screen and (max-width: 1440px) {
+    .footer-mid .logo {
+        left: 2%;
+    }
+    .footer-mid .col {
+        margin: 25px 15px;
+    }
+    .footer-mid .contact-box {
+        width: 330px;
+    }
+}
+
+@media screen and (max-width: 1280px) {
+    .footer-mid .logo {
+        left: 2%;
+    }
+    .footer-mid .col {
+        margin: 25px 12px;
+    }
+    .footer-mid .contact-box {
+        width: 330px;
+    }
+    .location {
+        position: relative;
+        right: 0;
+        padding: 5% 3%;
+    }
+    .location iframe {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .footer-mid .col-left {
+        width: 100%;
+        display: inline-block;
+    }
+    .footer-mid .logo {
+        display: inline-block;
+        position: relative;
+        left: 5%;
+    }
+    .footer-mid .logo img {
+        width: 450px;
+    }
+    .footer-mid p {
+        display: inline-block;
+        position: relative;
+        top: -25px;
+        padding: 0;
+        width: 450px;
+        font-size: 28px;
+    }
+    .footer-mid {
+        height: 560px;
+    }
+    .footer-mid .row,
+    .footer-nav .row {
+        display: inline-block;
+        height: 560px;
+    }
+    .footer-mid .col-left,
+    .footer-mid .col-right {
+        display: inline-block;
+    }
+    .footer-mid .col {
+        display: inline;
+        height: auto;
+        margin: 25px 12px;
+        float: left;
+    }
+    .footer-nav {
+        display: inline-block;
+        width: 72%;
+        margin: 0;
+    }
+    .footer-mid .contact-box {
+        position: relative;
+        width: 330px;
+    }
+    .footer-mid .col-right {
+        display: inline-block;
+        position: absolute;
+        right: 2%;
+        margin: 0;
+    }
+    .location {
+        display: inline-block;
+        margin: 0;
+    }
+    .footer-bottom {
+        height: 80px;
+        padding: 10px;
+    }
+    .footer-bottom .col-left p {
+        left: 10px;
+        width: 265px;
+    }
+    .payment-icons {
+        top: 14px;
+    }
+    .payment-icons img {
+        width: 60px;
+    }
+}
+
+@media screen and (max-width: 770px) {
+    .footer-mid .logo {
+        left: 0;
+    }
+    .footer-mid .logo img {
+        width: 380px;
+    }
+    .footer-mid p {
+        top: -25px;
+        width: 350px;
+        font-size: 22px;
+    }
+    .footer-mid {
+        height: 500px;
+    }
+    .footer-mid .col-left,
+    .footer-mid .col-right {
+        display: inline-block;
+    }
+    .footer-mid .col {
+        display: inline;
+        height: auto;
+        margin: 25px 6px;
+        float: left;
+    }
+    .footer-mid .col h2 {
+        font-size: 18px;
+    }
+    .footer-mid .col a {
+        font-size: 15px;
+    }
+    .footer-nav {
+        display: inline-block;
+    }
+    .footer-mid .contact-box {
+        position: relative;
+        width: 220px;
+    }
+    .footer-mid .contact-box ul {
+        position: relative;
+        top: 20px;
+    }
+    .footer-mid .contact-box i {
+        margin-left: -14px;
+        font-size: 17px;
+        float: left;
+    }
+    .footer-mid .contact-box li {
+        width: 260px;
+    }
+    .footer-mid .col-right {
+        margin-top: 3%;
+        right: 2.5%;
+    }
+    .location iframe {
+        width: 230px;
+        height: 230px;
+    }
+    .footer-bottom {
+        height: 80px;
+        padding: 10px;
+    }
+    .footer-bottom .col-left p {
+        left: 5px;
+        width: 200px;
+    }
+    .footer-bottom .col-right p {
+        right: -10px;
+        width: 200px;
+    }
+    .footer-bottom p {
+        font-size: 10px;
+    }
+    .payment-icons {
+        top: 18px;
+    }
+    .payment-icons img {
+        width: 45px;
+    }
+}
+
+@media screen and (max-width: 540px) {
+    .footer-top,
+    .footer-mid,
+    .footer-bottom,
+    .footer-bottom p,
+    .footer-bottom .payment-icons {
+        display: flex;
+        justify-content: center;
+    }
+    .footer-top {
+        height: 150px;
+    }
+    .social-icons {
+        font-size: 32px;
+        top: 10px;
+        left: 0px;
+    }
+    .footer-top .search-container {
+        float: none;
+        top: 20px;
+        right: 0px;
+    }
+    .footer-top .search-container button {
+        background: var(--LBlue);
+    }
+    .footer-top .search-container form {
+        left: 0;
+        margin-right: 0;
+    }
+    .footer-top .search-container input[type=text] {
+        padding: 13px;
+        width: 200px;
+    }
+    .footer-top .search-container button {
+        padding: 8px;
+        font-size: 22px;
+    }
+    .footer-mid {
+        height: 1236px;
+    }
+    .footer-mid p {
+        top: 0;
+        width: 90%;
+        margin: 0 20px;
+        font-size: 19px;
+    }
+    .footer-nav {
+        display: block;
+    }
+    .footer-mid .row {
+        display: block;
+    }
+    .footer-mid .col {
+        display: block;
+        float: none;
+        margin: 15px;
+    }
+    .footer-mid .col h2 {
+        font-size: 22px;
+    }
+    .footer-mid .col a {
+        font-size: 18px;
+    }
+    .footer-mid .contact-box {
+        width: 320px;
+    }
+    .footer-mid .contact-box h2 {
+        margin: 0;
+    }
+    .footer-mid .contact-box i {
+        margin-left: -8px;
+        font-size: 20px;
+    }
+    .footer-mid .contact-box li {
+        width: 100%;
+    }
+    .footer-mid .col-right {
+        position: relative;
+        margin-top: 0;
+        right: 0;
+        width: 100%;
+    }
+    .location {
+        position: relative;
+        top: 95px;
+        width: 100%;
+        padding: 0 5% 5%;
+    }
+    .location iframe {
+        width: 100%;
+    }
+    .footer-bottom {
+        height: 125px;
+    }
+    .payment-icons {
+        width: 100%;
+        margin: 18px 0;
+        top: 14px;
+    }
+    .payment-icons img {
+        width: 56px;
+    }
+    .footer-bottom p {
+        top: 20px;
+        font-size: 11px;
+    }
+    .footer-bottom .col-left p {
+        width: 100%;
+        left: 0;
+        top: 10px;
+    }
+    .footer-bottom .col-right p {
+        width: 100%;
+        right: 0;
+        top: 14px;
+    }
 }

@@ -12,10 +12,8 @@
     <link rel="stylesheet" href="assets/styles/main.css">
     <link rel="stylesheet" href="assets/styles/loader.css">
     <link rel="stylesheet" href="assets/styles/header.css">
-    <link rel="stylesheet" href="assets/styles/index.css">
     <link rel="stylesheet" href="assets/styles/footer.css">
-    <!-- Animate.CSS -->
-    <link rel="stylesheet" href="assets/styles/animate.css">
+    <link rel="stylesheet" href="assets/styles/card.css">
     <!-- Carousel CSS -->
     <link rel="stylesheet" href="assets/styles/carousel.css">
     <link rel="stylesheet" href="assets/styles/owl.carousel.css">
@@ -83,8 +81,33 @@
                             </a>
                         </div>
                     </div>
+                    <!-- Hamburger Icon with animation -->
+                    <div class="menu-btn">
+                        <ul class="toggle active">
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                        </ul>
+                    </div>
+                    <!-- Dark mode btn -->
+                    <div class="dark-mode">
+                        <!-- Alert Message -->
+                        <div class="alert">
+                            <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
+                            <p>Try out our dark theme.</p>
+                        </div>
+                        <!-- Btn -->
+                        <div id="bg-btn">
+                            <input type="checkbox" class="checkbox" id="chk" />
+                            <label class="label" for="chk">
+                                <i class="fas fa-sun"></i>
+                                <i class="fas fa-moon"></i>
+                                <div class="ball"></div>
+                            </label>
+                        </div>
+                    </div>
                     <!---searchbar-->
-                    <div class="col-right">
+                    <div class="col-right" id="search-bar">
                         <div class="search-container">
                             <form>
                                 <input type="text" placeholder="Search.." name="search">
@@ -99,14 +122,6 @@
             <div class="header"></div>
             <!-- Navigation Bar -->
             <nav class="nav-bar">
-                <!-- Hamburger Icon with animation -->
-                <div class="menu-btn">
-                    <ul class="toggle active">
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                    </ul>
-                </div>
                 <!-- Menu-Items -->
                 <div class="nav-container">
                     <div class="menu">
@@ -150,13 +165,13 @@
                             <img src="assets/imgs/index/carousel/img 01.jpg" alt="slide 01">
                         </div>
                         <div class="item" data-merge="6">
-                            <img src="assets/imgs/index/carousel/img 02.png" alt="slide 02">
+                            <img src="assets/imgs/index/carousel/img 02.jpg" alt="slide 02">
                         </div>
                         <div class="item" data-merge="6">
-                            <img src="assets/imgs/index/carousel/img 03.jpg" alt="slide 03">
+                            <a href="monitor.html"><img src="assets/imgs/index/carousel/img 03.jpg" alt="slide 03"></a>
                         </div>
                         <div class="item" data-merge="6">
-                            <img src="assets/imgs/index/carousel/img 04.png" alt="slide 04">
+                            <img src="assets/imgs/index/carousel/img 04.jpg" alt="slide 04">
                         </div>
                         <div class="item" data-merge="6">
                             <img src="assets/imgs/index/carousel/img 05.jpg" alt="slide 05">
@@ -165,10 +180,264 @@
                 </div>
             </section>
             <!-- Carousel Section Ends -->
+
             <!-- Products Section -->
             <section id="featured-products">
+
+                <!-- Featured Products Section -->
+
                 <div class="heading">
                     <h1>Featured Products</h1>
+                </div>
+                <div class="products-container">
+                    <div class="card">
+                        <div class="product-image">
+                            <img src="assets/imgs/index/cards/featured 01.png" alt="">
+                        </div>
+                        <div class="product-info">
+                            <h3>Galaxy Book Flex 15</h3>
+                            <h4>RS 132,000</h4>
+                        </div>
+                        <button type="button"><i class="fa fa-link"></i> View Details</button>
+                    </div>
+                    <div class="card">
+                        <div class="product-image">
+                            <img src="assets/imgs/index/cards/featured 02.png" alt="">
+                        </div>
+                        <div class="product-info">
+                            <h3>Avant Grade Tower Gaming PC</h3>
+                            <h4>RS 41,999</h4>
+                        </div>
+                        <button type="button"><i class="fa fa-link"></i> View Details</button>
+                    </div>
+                    <div class="card">
+                        <div class="product-image">
+                            <img src="assets/imgs/index/cards/featured 03.png" alt="">
+                        </div>
+                        <div class="product-info">
+                            <h3>SAMSUNG 43" UHD 4K Smart TV RU7100</h3>
+                            <h4>RS 47,000</h4>
+                        </div>
+                        <button type="button"><i class="fa fa-link"></i> View Details</button>
+                    </div>
+                    <div class="card">
+                        <div class="product-image">
+                            <img src="assets/imgs/index/cards/featured 04.png" alt="">
+                        </div>
+                        <div class="product-info">
+                            <h3>GeForce GTX 1070Ti</h3>
+                            <h4>RS 28,000</h4>
+                        </div>
+                        <button type="button"><i class="fa fa-link"></i> View Details</button>
+                    </div>
+                    <div class="card">
+                        <div class="product-image">
+                            <img src="assets/imgs/index/cards/featured 05.png" alt="">
+                        </div>
+                        <div class="product-info">
+                            <h3>Intex Gaming Mouse Keyboard Combo - Wired</h3>
+                            <h4>RS 4,999</h4>
+                        </div>
+                        <button type="button"><i class="fa fa-link"></i> View Details</button>
+                    </div>
+                    <div class="card">
+                        <div class="product-image">
+                            <img src="assets/imgs/index/cards/featured 06.png" alt="">
+                        </div>
+                        <div class="product-info">
+                            <h3>Canon DSLR - EOS 6D Mark II</h3>
+                            <h4>RS 84,000</h4>
+                        </div>
+                        <button type="button"><i class="fa fa-link"></i> View Details</button>
+                    </div>
+                    <div class="card">
+                        <div class="product-image">
+                            <img src="assets/imgs/index/cards/featured 07.png" alt="">
+                        </div>
+                        <div class="product-info">
+                            <h3>Razer PewDiePie Kraken Pro V2 - Analog Gaming Headset</h3>
+                            <h4>RS 6,500</h4>
+                        </div>
+                        <button type="button"><i class="fa fa-link"></i> View Details</button>
+                    </div>
+                    <div class="card">
+                        <div class="product-image">
+                            <img src="assets/imgs/index/cards/featured 08.png" alt="">
+                        </div>
+                        <div class="product-info">
+                            <h3>PS5 Controller</h3>
+                            <h4>RS 7,500</h4>
+                        </div>
+                        <button type="button"><i class="fa fa-link"></i> View Details</button>
+                    </div>
+                    <div class="card">
+                        <div class="product-image">
+                            <img src="assets/imgs/index/cards/featured 09.png" alt="">
+                        </div>
+                        <div class="product-info">
+                            <h3>SSD 840 SAMSUNG 250GB</h3>
+                            <h4>RS 4,999</h4>
+                        </div>
+                        <button type="button"><i class="fa fa-link"></i> View Details</button>
+                    </div>
+                    <div class="card">
+                        <div class="product-image">
+                            <img src="assets/imgs/index/cards/featured 10.png" alt="">
+                        </div>
+                        <div class="product-info">
+                            <h3>Redragon Blade M692 - Wireless Gaming Mouse</h3>
+                            <h4>RS 2,400</h4>
+                        </div>
+                        <button type="button"><i class="fa fa-link"></i> View Details</button>
+                    </div>
+                    <div class="card">
+                        <div class="product-image">
+                            <img src="assets/imgs/index/cards/featured 11.png" alt="">
+                        </div>
+                        <div class="product-info">
+                            <h3>Razer Gaming Phone Case</h3>
+                            <h4>RS 250/each</h4>
+                        </div>
+                        <button type="button"><i class="fa fa-link"></i> View Details</button>
+                    </div>
+                    <div class="card">
+                        <div class="product-image">
+                            <img src="assets/imgs/index/cards/featured 12.png" alt="">
+                        </div>
+                        <div class="product-info">
+                            <h3>Neckband Bluetooth Headphone</h3>
+                            <h4>RS 1,500</h4>
+                        </div>
+                        <button type="button"><i class="fa fa-link"></i> View Details</button>
+                    </div>
+                </div>
+
+                <!-- New Arrivals Section -->
+
+                <div class="heading">
+                    <h1>New Arrivals</h1>
+                </div>
+                <div class="products-container">
+                    <div class="card">
+                        <div class="product-image">
+                            <img src="assets/imgs/index/cards/new 01.png" alt="">
+                        </div>
+                        <div class="product-info">
+                            <h3>iphone 12 Pro Max - 256GB</h3>
+                            <h4>RS 224,499</h4>
+                        </div>
+                        <button type="button"><i class="fa fa-link"></i> View Details</button>
+                    </div>
+                    <div class="card">
+                        <div class="product-image">
+                            <img src="assets/imgs/index/cards/new 02.png" alt="">
+                        </div>
+                        <div class="product-info">
+                            <h3>SAMSUNG Ultrawide 49" CHG90 QLED Gaming Monitor</h3>
+                            <h4>RS 165,000</h4>
+                        </div>
+                        <button type="button"><i class="fa fa-link"></i> View Details</button>
+                    </div>
+                    <div class="card">
+                        <div class="product-image">
+                            <img src="assets/imgs/index/cards/new 03.png" alt="">
+                        </div>
+                        <div class="product-info">
+                            <h3>i8 Wireless Mini Keyboard</h3>
+                            <h4>RS 1,499</h4>
+                        </div>
+                        <button type="button"><i class="fa fa-link"></i> View Details</button>
+                    </div>
+                    <div class="card">
+                        <div class="product-image">
+                            <img src="assets/imgs/index/cards/new 04.png" alt="">
+                        </div>
+                        <div class="product-info">
+                            <h3>L1 R1 Handle Mobile Gaming Joystick</h3>
+                            <h4>RS 1,599</h4>
+                        </div>
+                        <button type="button"><i class="fa fa-link"></i> View Details</button>
+                    </div>
+                    <div class="card">
+                        <div class="product-image">
+                            <img src="assets/imgs/index/cards/new 05.png" alt="">
+                        </div>
+                        <div class="product-info">
+                            <h3>Cooler Master MM830 Wireless</h3>
+                            <h4>RS 17,999</h4>
+                        </div>
+                        <button type="button"><i class="fa fa-link"></i> View Details</button>
+                    </div>
+                    <div class="card">
+                        <div class="product-image">
+                            <img src="assets/imgs/index/cards/new 06.png" alt="">
+                        </div>
+                        <div class="product-info">
+                            <h3>VR Xbox One S</h3>
+                            <h4>RS 8,999</h4>
+                        </div>
+                        <button type="button"><i class="fa fa-link"></i> View Details</button>
+                    </div>
+                    <div class="card">
+                        <div class="product-image">
+                            <img src="assets/imgs/index/cards/new 07.png" alt="">
+                        </div>
+                        <div class="product-info">
+                            <h3>HyperX QuadCast Mic</h3>
+                            <h4>RS 37,990</h4>
+                        </div>
+                        <button type="button"><i class="fa fa-link"></i> View Details</button>
+                    </div>
+                    <div class="card">
+                        <div class="product-image">
+                            <img src="assets/imgs/index/cards/new 08.png" alt="">
+                        </div>
+                        <div class="product-info">
+                            <h3>Laptop Cooling Pad</h3>
+                            <h4>RS 3,500</h4>
+                        </div>
+                        <button type="button"><i class="fa fa-link"></i> View Details</button>
+                    </div>
+                    <div class="card">
+                        <div class="product-image">
+                            <img src="assets/imgs/index/cards/new 09.png" alt="">
+                        </div>
+                        <div class="product-info">
+                            <h3>Realme Cooling Back Clip</h3>
+                            <h4>RS 999</h4>
+                        </div>
+                        <button type="button"><i class="fa fa-link"></i> View Details</button>
+                    </div>
+                    <div class="card">
+                        <div class="product-image">
+                            <img src="assets/imgs/index/cards/new 10.png" alt="">
+                        </div>
+                        <div class="product-info">
+                            <h3>Boat Rockerz 510 Wireless Bluetooth Headphones</h3>
+                            <h4>RS 2,200</h4>
+                        </div>
+                        <button type="button"><i class="fa fa-link"></i> View Details</button>
+                    </div>
+                    <div class="card">
+                        <div class="product-image">
+                            <img src="assets/imgs/index/cards/new 11.png" alt="">
+                        </div>
+                        <div class="product-info">
+                            <h3>Raycon Airbuds</h3>
+                            <h4>RS 2,660</h4>
+                        </div>
+                        <button type="button"><i class="fa fa-link"></i> View Details</button>
+                    </div>
+                    <div class="card">
+                        <div class="product-image">
+                            <img src="assets/imgs/index/cards/new 12.png" alt="">
+                        </div>
+                        <div class="product-info">
+                            <h3>MAJLIS-120 - 12" TROLLY SPEAKER</h3>
+                            <h4>RS 12,500</h4>
+                        </div>
+                        <button type="button"><i class="fa fa-link"></i> View Details</button>
+                    </div>
                 </div>
             </section>
 
@@ -199,9 +468,9 @@
                         <div class="col-left">
                             <div class="logo">
                                 <a href="index.html"><img src="assets/imgs/logo/logo.png" alt="logo"></a>
+                                <p>Welcome to Blueberry Accessories. This is not an official website. this is just a Frontend design, made by M. Usman Amjad & M. Yasir Hussain.
+                                </p>
                             </div>
-                            <p>Welcome to Blueberry Accessories. This is not an official website. this is just a Frontend design, made by M. Usman Amjad & M. Yasir Hussain.
-                            </p>
                         </div>
                         <div class="footer-nav">
                             <div class="row">
@@ -267,6 +536,7 @@
     <script src="assets/scripts/owl.carousel.js"></script>
     <script src="assets/scripts/main.js"></script>
     <script src="assets/scripts/GSAP3.js"></script>
+    <script src="assets/scripts/ScrollTrigger.min.js"></script>
     <script src="assets/scripts/loader.js"></script>
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
 

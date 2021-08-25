@@ -24,21 +24,7 @@ li {
     display: flex;
 }
 
-.pull-left .userMenu a {
-    text-decoration: none;
-    color: #fff;
-    font-family: 'Raleway';
-    font-size: 10px;
-    font-style: normal;
-    position: relative;
-    cursor: pointer;
-}
-
-.pull-left .userMenu a:hover {
-    color: var(--DGreen);
-    transition: 0.3s;
-}
-
+.pull-left .userMenu a,
 .pull-right .userMenu a {
     text-decoration: none;
     color: #fff;
@@ -47,6 +33,11 @@ li {
     font-style: normal;
     position: relative;
     cursor: pointer;
+}
+
+.pull-left .userMenu a:hover {
+    color: var(--DGreen);
+    transition: 0.3s;
 }
 
 .userMenu li {
@@ -73,6 +64,7 @@ li {
 }
 
 .row .logo {
+    width: 100%;
     z-index: 10;
 }
 
@@ -82,19 +74,6 @@ li {
     position: relative;
     left: 2%;
     z-index: 10;
-}
-
-
-/* Cart Icon */
-
-.col-right span {
-    position: relative;
-    float: right;
-    font-size: 36px;
-    color: #fff;
-    margin-top: 8px;
-    color: white;
-    z-index: 5;
 }
 
 
@@ -137,6 +116,22 @@ input[type=text] {
     border-radius: 0 5px 5px 0;
 }
 
+
+/* Cart Icon */
+
+.col-right span {
+    position: relative;
+    float: right;
+    font-size: 36px;
+    color: #fff;
+    margin-top: 8px;
+    color: white;
+    z-index: 5;
+}
+
+
+/* Navigation Bar */
+
 .nav-bar {
     background: var(--DBlue);
     width: 100%;
@@ -145,7 +140,7 @@ input[type=text] {
     text-align: center;
 }
 
-.nav-bar.fixed {
+.fixed {
     position: fixed;
     top: 0px;
 }
@@ -254,6 +249,7 @@ li.current a:after {
     position: absolute;
     background-color: #f9f9f9;
     min-width: 160px;
+    min-height: auto;
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     z-index: 7;
     margin-top: 21px;
@@ -275,26 +271,92 @@ li.current a:after {
 
 /* Media Queries */
 
+@media screen and (max-width: 1920px) {
+    .container {
+        display: inline-block;
+    }
+    .search-container {
+        right: 25px;
+    }
+}
+
 @media screen and (max-width: 770px) {
+    .logo img {
+        width: 225px;
+    }
+    .search-container {
+        right: 20px;
+    }
+    input[type=text] {
+        width: 300px;
+    }
+    .menu a {
+        font-size: 17px;
+        margin: 0px 3px;
+        padding: 14px 4px;
+    }
+}
+
+@media screen and (max-width: 540px) {
+    .navbar-top {
+        display: none;
+        position: fixed;
+    }
+    .row {
+        display: block;
+    }
+    .pull-left .userMenu a,
+    .pull-right .userMenu a {
+        font-size: 9px;
+    }
+    .pull-right {
+        margin-right: 5px;
+    }
+    .userMenu li {
+        margin: 5px 2px;
+        padding: 5px;
+    }
+    .header-mid {
+        position: fixed;
+        overflow: hidden;
+        width: 100%;
+        top: 0;
+        z-index: 110;
+        padding: 10px;
+    }
+    .logo img {
+        left: 0%;
+    }
+    .menu-btn {
+        display: block;
+        position: absolute;
+        width: 50px;
+        left: 80%;
+        top: 38px;
+        z-index: 100;
+    }
+    .hover-fx {
+        overflow-y: scroll;
+        max-height: 450px;
+    }
+    .hover-fx::-webkit-scrollbar {
+        display: none;
+    }
     .nav-bar {
-        z-index: 12;
+        position: fixed;
+        background: transparent;
         padding: 0;
     }
     .nav-container {
-        position: relative;
+        position: static;
+        z-index: 100;
+        margin-top: 195px;
+        background-color: transparent;
         display: flex;
         text-align: center;
         justify-content: center;
         flex-wrap: wrap;
         padding: 0;
-        background: var(--LBlue);
-    }
-    .menu-btn {
-        display: block;
-        position: relative;
-        width: 50px;
-        top: 8px;
-        left: 0px;
     }
     .menu-btn.active {
         display: block;
@@ -354,14 +416,14 @@ li.current a:after {
     }
     .menu.active {
         display: block;
-        position: relative;
+        position: static;
         margin-top: 0;
         width: 100%;
         max-height: 380px;
         overflow-y: scroll;
-        background: var(--LBlue);
+        background: var(--DBlue);
         opacity: 1;
-        transition: all .5s ease-in-out;
+        transition: all .4s ease-in-out;
     }
     .menu.active::-webkit-scrollbar {
         display: none;
@@ -371,14 +433,21 @@ li.current a:after {
         font-size: 22px;
     }
     .menu.active ul {
+        background-color: var(--DBlue);
         display: block;
         width: 100%;
     }
     .menu {
         opacity: 0;
-        background: var(--LBlue);
-        margin-top: -500px;
-        transition: all .3s ease-in-out;
+        margin-top: -250px;
+        transition: all .4s ease-in-out;
+    }
+    .hover-fx {
+        position: absolute;
+        opacity: 0;
+    }
+    .menu.active .hover-fx {
+        opacity: 1;
     }
     .menu li {
         display: block;
@@ -401,5 +470,35 @@ li.current a:after {
     }
     .dropdown .dropdown-content a {
         font-size: 22px;
+    }
+    .search-bar {
+        display: block;
+    }
+    .search-container {
+        top: 0px;
+        right: 0px;
+    }
+    .search-container form {
+        position: relative;
+        left: 10px;
+        margin-right: 25px;
+    }
+    input[type=text] {
+        padding: 14px;
+        font-size: 14px;
+        width: 240px;
+    }
+    .search-container button {
+        padding: 8px;
+        margin-right: 0px;
+        font-size: 24px;
+    }
+    .col-right span {
+        font-size: 30px;
+        margin-top: 6px;
+        margin-right: auto;
+    }
+    .hide {
+        display: none;
     }
 }

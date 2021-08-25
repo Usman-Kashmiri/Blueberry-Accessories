@@ -6,19 +6,59 @@ $(document).ready(function() {
         $('.menu').toggleClass("active");
         $('.menu-btn .menu').toggleClass('active');
     });
-    // Current Page effect
-    // $('ul li a').click(function() {
-    //     $('li a').removeClass('.current');
-    //     $(this).addClass('current');
-    // });
+
+    // Dark Theme 
+    var checkBox = document.getElementById('chk');
+
+    var theme = window.localStorage.getItem('data-theme');
+    if (theme) document.documentElement.setAttribute('data-theme', theme);
+    checkBox.checked = theme == 'darkMode' ? true : false;
+
+    if (checkBox.checked) {
+        $('body').addClass('dark');
+        $(".alert").hide()
+    } else {
+        $('body').removeClass('dark');
+        $(".alert").hide().delay(6000).fadeIn();
+    }
+
+    checkBox.addEventListener('change', function() {
+        if (this.checked) {
+            document.documentElement.setAttribute('data-theme', 'darkMode');
+            $('body').addClass('dark');
+            window.localStorage.setItem('data-theme', 'darkMode');
+        } else {
+            document.documentElement.setAttribute('data-theme', 'light');
+            $('body').removeClass('dark');
+            window.localStorage.setItem('data-theme', 'light');
+        }
+    });
 
     // Navbar onScroll effect
     $(window).scroll(function() {
-        if ($(window).scrollTop() >= 240) {
+        if ($(window).scrollTop() >= 230) {
             $('.nav-bar').addClass('fixed');
         } else {
             $('.nav-bar').removeClass('fixed');
         }
+    });
+
+    // Searchbar hide on scroll effect
+    var prevScrollpos = window.pageYOffset;
+
+    $(window).scroll(function() {
+        var currentScrollPos = window.pageYOffset;
+        if (prevScrollpos < currentScrollPos) {
+            $('#search-bar').addClass('hide');
+        } else {
+            $('#search-bar').removeClass('hide');
+        }
+        prevScrollpos = currentScrollPos;
+        // ScrollTimer
+        clearTimeout($.data(this, 'scrollTimer'));
+        $.data(this, 'scrollTimer', setTimeout(function() {
+            $('#search-bar').removeClass('hide');
+        }, 300));
     });
 
     // Drop-down
@@ -33,12 +73,10 @@ $(document).ready(function() {
     $('body').click(function() {
         $('#accessories-content').hide();
     });
-    // $('body').click(function() {
-    //     $('i', '#accessories-btn').toggleClass('fa-caret-down fa-caret-up');
-    // });
     $('#accessories-btn').click(function(event) {
         event.stopPropagation();
     });
+
 
     $('body').click(function() {
         $('#products-content').hide();
@@ -57,14 +95,22 @@ $(document).ready(function() {
         autoplayHoverPause: true,
         dots: false,
         nav: true,
-        navText: ["<div class='nav-btn owl-prev'><i class='fa fa-chevron-left'></i></div>", "<div class='nav-btn owl-next'><i class='fa fa-chevron-right'></i></div>"],
-        responsive: {
-            678: {
-                mergeFit: true
-            },
-            1000: {
-                mergeFit: true
-            }
-        }
+        navText: ["<div class='nav-btn owl-prev'><i class='fa fa-chevron-left'></i></div>", "<div class='nav-btn owl-next'><i class='fa fa-chevron-right'></i></div>"]
     });
+
+    // GSAP Cards Animation
+
+    gsap.registerPlugin(ScrollTrigger)
+
+    var cards = document.querySelectorAll(".card");
+
+    var action = gsap.timeline({
+            scrollTrigger: {
+                trigger: ".card",
+                scrub: 3,
+                start: 'top 80%',
+                end: "+=2500",
+            }
+        })
+        .from(cards, { opacity: 0, ease: "none", stagger: 3 })
 });
