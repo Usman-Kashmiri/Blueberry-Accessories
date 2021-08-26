@@ -108,7 +108,7 @@ $(document).ready(function() {
             scrollTrigger: {
                 trigger: ".card",
                 scrub: 3,
-                start: 'top 80%',
+                start: 'top 100%',
                 end: "+=2500",
             }
         })
