@@ -8,6 +8,17 @@
     --DBlue: #282c6b;
     --DGreen: #71c038;
     --Dark: #292C35;
+    --white: #fff;
+}
+
+body.dark-theme {
+    --text-color: black;
+}
+
+@media (prefers-color-scheme: dark) {
+    body.light-theme {
+        --text-color: white;
+    }
 }
 
 * {
@@ -65,7 +76,7 @@ html {
 
 body {
     overflow-x: hidden;
-    background-color: #fff;
+    background-color: white;
     transition: 0.3s linear;
 }
 
@@ -107,7 +118,6 @@ body.dark {
     padding: 8px 20px;
     width: 250px;
     background-color: var(--Dark);
-    color: white;
     position: absolute;
     margin-top: 54px;
     right: 5px;
@@ -127,6 +137,7 @@ body.dark {
 
 .alert p {
     font-family: 'Raleway';
+    color: white;
     font-size: 16px;
     margin-top: 4px;
 }
@@ -256,6 +267,9 @@ body.dark {
     }
     .label {
         transform: scale(1.1);
+    }
+    .alert {
+        top: -26px;
     }
 }
 

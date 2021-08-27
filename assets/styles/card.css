@@ -97,6 +97,10 @@
     /* border-radius: 0 0 15px 15px; */
 }
 
+.products-container .card button:hover {
+    background: var(--DBlue);
+}
+
 .products-container .card button i {
     margin-right: 10px;
     font-size: 18px;
@@ -137,6 +141,14 @@
     .products-container .card button i {
         margin-right: 6px;
         font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 770px) {
+    .products-container .card {
+        width: 312px;
+        height: 436px;
+        margin: 24px 10px;
     }
 }
 

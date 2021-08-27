@@ -10,7 +10,7 @@
     <link rel="shortcut icon" href="assets/imgs/icons/favicon.png" type="image/x-icon">
     <!-- StyleSheets & CSS CDNs -->
     <link rel="stylesheet" href="assets/styles/main.css">
-    <link rel="stylesheet" href="assets/styles/about.css">
+    <link rel="stylesheet" href="assets/styles/product.css">
     <link rel="stylesheet" href="assets/styles/loader.css">
     <link rel="stylesheet" href="assets/styles/header.css">
     <link rel="stylesheet" href="assets/styles/footer.css">
@@ -52,7 +52,7 @@
                                     <li><a href="contact.html">Contact Us</a></li>
                                     <li><a href="feedback.html">Feedback</a></li>
                                     <li><a href="faq.html">FAQs</a></li>
-                                    <li class="current-page"><a href="polices.html">Policess</a></li>
+                                    <li><a href="polices.html">Policess</a></li>
                                 </ul>
                             </div>
                         </div>
@@ -126,9 +126,9 @@
                             <li class="dropdown">
                                 <a class="dropbtn" id="accessories-btn">Accessories <i class="fa fa-caret-down"></i></a>
                                 <div class="dropdown-content" id="accessories-content">
-                                    <a href="accessories.html">Headsets</a>
-                                    <a href="accessories.html">Mobile Accessories</a>
-                                    <a href="accessories.html">Computer Accessories</a>
+                                    <a href="#">Link 1</a>
+                                    <a href="#">Link 2</a>
+                                    <a href="#">Link 3</a>
                                 </div>
                             </li>
                             <li class="dropdown">
@@ -154,18 +154,98 @@
         <!-- Main Content -->
 
         <main>
-            <section class="about-section">
-                <h1>Our Policess</h1>
-                <div class="paragraph">
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor obcaecati quis architecto magnam natus ut esse, possimus doloribus laboriosam debitis minima provident similique odit animi consectetur nesciunt assumenda sequi totam!</p>
+            <div class="card-wrapper">
+                <div class="card">
+                    <!-- card left -->
+                    <div class="product-imgs">
+                        <div class="img-display">
+                            <div class="img-showcase">
+                                <img src="assets/imgs/products/img 01.jpg" alt="3310">
+                                <img src="assets/imgs/products/img 02.jpg" alt="3310">
+                                <img src="assets/imgs/products/img 03.jpg" alt="3310">
+                                <img src="assets/imgs/products/img 04.jpg" alt="3310">
+                            </div>
+                        </div>
+                        <div class="img-select">
+                            <div class="img-item">
+                                <a href="#" data-id="1">
+                                    <img src="assets/imgs/products/img 01.jpg" alt="3310">
+                                </a>
+                            </div>
+                            <div class="img-item">
+                                <a href="#" data-id="2">
+                                    <img src="assets/imgs/products/img 02.jpg" alt="3310">
+                                </a>
+                            </div>
+                            <div class="img-item">
+                                <a href="#" data-id="3">
+                                    <img src="assets/imgs/products/img 03.jpg" alt="3310">
+                                </a>
+                            </div>
+                            <div class="img-item">
+                                <a href="#" data-id="4">
+                                    <img src="assets/imgs/products/img 04.jpg" alt="3310">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- card right -->
+                    <div class="product-content">
+                        <h2 class="product-title">Nokia 3310</h2>
+                        <a href="https://www.nokia.com/phones/en_pk/nokia-3310?sku=A00028124" class="product-link">visit Nokia Store</a>
+                        <div class="product-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                            <span>4.7(21)</span>
+                        </div>
+
+                        <div class="product-price">
+                            <p class="last-price">Old Price: <span>Rs. 3500.00</span></p>
+                            <p class="new-price">New Price: <span>Rs. 3325.00 (-5%)</span></p>
+                        </div>
+
+                        <div class="product-detail">
+                            <h2>about this item: </h2>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo eveniet veniam tempora fuga tenetur placeat sapiente architecto illum soluta consequuntur, aspernatur quidem at sequi ipsa!</p>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, perferendis eius. Dignissimos, labore suscipit. Unde.</p>
+                            <ul>
+                                <li>Color: <span>Classic</span></li>
+                                <li>Available: <span>in stock</span></li>
+                                <li>Category: <span>Mobile</span></li>
+                                <li>Shipping Area: <span>Pakistan</span></li>
+                                <li>Shipping Fee: <span>Rs. 125.00</span></li>
+                            </ul>
+                        </div>
+
+                        <div class="purchase-info">
+                            <input type="number" min="0" value="1">
+                            <button type="button" class="btn">
+                            Add to Cart <i class = "fas fa-shopping-cart"></i>
+                            </button>
+                            <button type="button" class="btn">Buy</button>
+                        </div>
+
+                        <div class="social-links">
+                            <p>Share At: </p>
+                            <a href="#">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                            <a href="#">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                            <a href="#">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                            <a href="#">
+                                <i class="fab fa-whatsapp"></i>
+                            </a>
+                        </div>
+                    </div>
                 </div>
-                <div class="paragraph">
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Unde consectetur possimus quam quisquam ea blanditiis, similique quod ducimus nostrum repellendus ullam quis adipisci eum libero qui, quas, quo nesciunt corporis?</p>
-                </div>
-                <div class="paragraph">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus officiis magni minus natus, atque soluta quidem dicta illo sequi vitae magnam nulla eum sint minima similique ipsum dolorum laboriosam iste?</p>
-                </div>
-            </section>
+            </div>
         </main>
 
         <!-- footer -->
@@ -261,6 +341,7 @@
     <script src="assets/scripts/jquery.min.js"></script>
     <script src="assets/scripts/owl.carousel.js"></script>
     <script src="assets/scripts/main.js"></script>
+    <script src="assets/scripts/product.js"></script>
     <script src="assets/scripts/GSAP3.js"></script>
     <script src="assets/scripts/loader.js"></script>
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>

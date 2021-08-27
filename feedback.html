@@ -10,7 +10,7 @@
     <link rel="shortcut icon" href="assets/imgs/icons/favicon.png" type="image/x-icon">
     <!-- StyleSheets & CSS CDNs -->
     <link rel="stylesheet" href="assets/styles/main.css">
-    <link rel="stylesheet" href="assets/styles/about.css">
+    <link rel="stylesheet" href="assets/styles/feedback.css">
     <link rel="stylesheet" href="assets/styles/loader.css">
     <link rel="stylesheet" href="assets/styles/header.css">
     <link rel="stylesheet" href="assets/styles/footer.css">
@@ -50,9 +50,9 @@
                                 <ul class="userMenu">
                                     <li><a href="about.html">About Blueberry Accessories</a></li>
                                     <li><a href="contact.html">Contact Us</a></li>
-                                    <li><a href="feedback.html">Feedback</a></li>
+                                    <li class="current-page"><a href="feedback.html">Feedback</a></li>
                                     <li><a href="faq.html">FAQs</a></li>
-                                    <li class="current-page"><a href="polices.html">Policess</a></li>
+                                    <li><a href="polices.html">Policess</a></li>
                                 </ul>
                             </div>
                         </div>
@@ -154,16 +154,26 @@
         <!-- Main Content -->
 
         <main>
-            <section class="about-section">
-                <h1>Our Policess</h1>
-                <div class="paragraph">
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor obcaecati quis architecto magnam natus ut esse, possimus doloribus laboriosam debitis minima provident similique odit animi consectetur nesciunt assumenda sequi totam!</p>
-                </div>
-                <div class="paragraph">
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Unde consectetur possimus quam quisquam ea blanditiis, similique quod ducimus nostrum repellendus ullam quis adipisci eum libero qui, quas, quo nesciunt corporis?</p>
-                </div>
-                <div class="paragraph">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus officiis magni minus natus, atque soluta quidem dicta illo sequi vitae magnam nulla eum sint minima similique ipsum dolorum laboriosam iste?</p>
+            <section class="contact-section">
+                <div class="wrapper">
+                    <h2>Send Us Your Feedback!</h2>
+                    <form action="https://formspree.io/f/xrgrowew" method="POST">
+                        <div class="form-group">
+                            <label for="name">Full Name</label>
+                            <input type="text" name="Name" id="name" placeholder="First and Last" required minlength="3" maxlength="25" />
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email Address</label>
+                            <input type="email" name="Email" id="email" placeholder="email@domain.tld" required />
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea name="Message" id="message" rows="5" placeholder="Type your message here...."></textarea>
+                        </div>
+                        <div class="form-group">
+                            <button type="submit" class="submit"><i class="far fa-paper-plane"></i>Send</button>
+                        </div>
+                    </form>
                 </div>
             </section>
         </main>

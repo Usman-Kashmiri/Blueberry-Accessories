@@ -48,6 +48,10 @@ li {
     padding: 7px;
 }
 
+.current-page a {
+    color: var(--DGreen) !important;
+}
+
 
 /* Logo */
 

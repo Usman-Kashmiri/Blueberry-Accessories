@@ -1,0 +1,57 @@
+.about-section {
+    position: relative;
+    display: block;
+    padding: 5% 8%;
+}
+
+h1 {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 42px;
+    position: relative;
+    text-align: center;
+    color: #fff;
+}
+
+p {
+    font-size: 26px;
+}
+
+.paragraph {
+    margin: 4% 0 4%;
+}
+
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.about-section h1,
+.about-section p {
+    color: var(--text-color);
+}
+
+
+/* Media Quries */
+
+@media screen and (max-width: 1920px) {
+    .about-section {
+        padding: 6% 12%;
+    }
+}
+
+@media screen and (max-width: 1440px) {
+    .about-section {
+        padding: 5% 8%;
+    }
+}
+
+@media screen and (max-width: 540px) {
+    .paragraph {
+        margin: 8% 0 8%;
+    }
+    .about-section {
+        height: 900px;
+    }
+    p {
+        font-size: 19px;
+    }
+}

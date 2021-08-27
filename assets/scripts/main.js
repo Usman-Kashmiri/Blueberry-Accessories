@@ -16,7 +16,7 @@ $(document).ready(function() {
 
     if (checkBox.checked) {
         $('body').addClass('dark');
-        $(".alert").hide()
+        $('.alert').hide()
     } else {
         $('body').removeClass('dark');
         $(".alert").hide().delay(6000).fadeIn();
@@ -33,6 +33,33 @@ $(document).ready(function() {
             window.localStorage.setItem('data-theme', 'light');
         }
     });
+
+    const btn = document.getElementById("chk");
+    const prefersDarkScheme = window.matchMedia("(prefers-color-scheme: dark)");
+
+    const currentTheme = localStorage.getItem("theme");
+    if (currentTheme == "dark") {
+        document.body.classList.toggle("dark-theme");
+    } else if (currentTheme == "light") {
+        document.body.classList.toggle("light-theme");
+    }
+
+    btn.addEventListener("click", function() {
+        if (prefersDarkScheme.matches) {
+            document.body.classList.toggle("light-theme");
+            var theme = document.body.classList.contains("light-theme") ?
+                "light" :
+                "dark";
+        } else {
+            document.body.classList.toggle("dark-theme");
+            var theme = document.body.classList.contains("dark-theme") ?
+                "dark" :
+                "light";
+        }
+        localStorage.setItem("theme", theme);
+    });
+
+
 
     // Navbar onScroll effect
     $(window).scroll(function() {
@@ -100,17 +127,18 @@ $(document).ready(function() {
 
     // GSAP Cards Animation
 
-    gsap.registerPlugin(ScrollTrigger)
+    // gsap.registerPlugin(ScrollTrigger)
 
-    var cards = document.querySelectorAll(".card");
+    // var cards = document.querySelectorAll(".card");
 
-    var action = gsap.timeline({
-            scrollTrigger: {
-                trigger: ".card",
-                scrub: 3,
-                start: 'top 100%',
-                end: "+=2500",
-            }
-        })
-        .from(cards, { opacity: 0, ease: "none", stagger: 3 })
+    // var action = gsap.timeline({
+    //         scrollTrigger: {
+    //             trigger: ".card",
+    //             scrub: 3,
+    //             start: 'top bottom',
+    //             end: "+=2500",
+    //         }
+    //     })
+    //     .from(cards, { opacity: 0, ease: "none", stagger: 3 })
+
 });
