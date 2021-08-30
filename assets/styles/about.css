@@ -4,7 +4,7 @@
     padding: 5% 8%;
 }
 
-h1 {
+.about-section h1 {
     font-family: 'Open Sans', sans-serif;
     font-size: 42px;
     position: relative;
@@ -12,7 +12,7 @@ h1 {
     color: #fff;
 }
 
-p {
+.about-section p {
     font-size: 26px;
 }
 
@@ -20,7 +20,7 @@ p {
     margin: 4% 0 4%;
 }
 
-* {
+.about-section {
     font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -51,7 +51,7 @@ p {
     .about-section {
         height: 900px;
     }
-    p {
+    .about-section p {
         font-size: 19px;
     }
 }

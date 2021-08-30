@@ -193,6 +193,9 @@ footer {
 }
 
 @media screen and (max-width: 1024px) {
+    footer {
+        height: 59pc;
+    }
     .footer-mid .col-left {
         width: 100%;
         display: inline-block;
