@@ -1,12 +1,3 @@
-body {
-    line-height: 1.5;
-}
-
-.alert::before {
-    transform: scale(1.6);
-    top: -42px;
-}
-
 .card-wrapper p,
 .card-wrapper h2,
 .card-wrapper li,
@@ -133,9 +124,10 @@ main {
 }
 
 .product-detail p {
-    font-size: 0.9rem;
+    font-size: 1.1rem;
     padding: 0.3rem;
     opacity: 0.8;
+    font-weight: 800;
 }
 
 .product-detail ul {
@@ -144,18 +136,26 @@ main {
 }
 
 .product-detail ul li {
-    margin: 0;
     list-style: none;
-    background: url(https://fadzrinmadu.github.io/hosted-assets/product-detail-page-design-with-image-slider-html-css-and-javascript/checked.png) left center no-repeat;
-    background-size: 18px;
-    padding-left: 1.7rem;
+    font-size: 18px;
     margin: 0.4rem 0;
+    font-weight: 800;
+    opacity: 0.9;
+}
+
+.product-detail ul li::before {
+    content: '\f058';
+    font-family: fontAwesome;
+    font-size: 20px;
+    margin: 0 8px 0 0;
+    color: var(--DGreen);
     font-weight: 600;
     opacity: 0.9;
 }
 
 .product-detail ul li span {
-    font-weight: 400;
+    font-weight: 300;
+    font-size: 16px;
 }
 
 .purchase-info {
@@ -164,7 +164,6 @@ main {
 
 .purchase-info input,
 .purchase-info .btn {
-    border: none;
     border-radius: 25px;
     text-align: center;
     padding: 0.45rem 0.8rem;
@@ -174,9 +173,11 @@ main {
 
 .purchase-info input {
     width: 60px;
+    border: solid 1px;
 }
 
 .purchase-info .btn {
+    border: none;
     cursor: pointer;
     color: #fff;
 }
