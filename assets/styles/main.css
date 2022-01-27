@@ -8,17 +8,12 @@
     --DBlue: #282c6b;
     --DGreen: #71c038;
     --Dark: #292C35;
-    --white: #fff;
+    --White: #fff;
+    --Black: #111;
 }
 
 body.dark-theme {
-    --text-color: black;
-}
-
-@media (prefers-color-scheme: dark) {
-    body.light-theme {
-        --text-color: white;
-    }
+    --text-color: white;
 }
 
 * {
@@ -78,10 +73,14 @@ body {
     overflow-x: hidden;
     background-color: white;
     transition: 0.3s linear;
+    --text-color: var(--Black);
+    --text-color2: var(--White);
 }
 
 body.dark {
     background: #111;
+    --text-color: var(--White);
+    --text-color2: var(--Black);
 }
 
 
